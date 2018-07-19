@@ -18,7 +18,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		private FlexibleString m_PlayerName = new FlexibleString("Player0");
 
 		[SerializeField]
-		private StateLink m_OnButtonDown = new StateLink();
+		private StateLink m_OnButtonUp = new StateLink();
 
 		private Player m_Player;
 
@@ -40,7 +40,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		{
 			if (m_Player != null && m_Player.GetAnyButtonUp())
 			{
-				Transition(m_OnButtonDown);
+				Transition(m_OnButtonUp);
 			}
 		}
 	}
