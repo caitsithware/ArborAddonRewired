@@ -365,7 +365,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
-  m_OnButtonDown:
+  m_OnButton:
     name: 
     stateID: 1516180604
     transitionTiming: 2
@@ -436,7 +436,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
-  m_OnButtonDown:
+  m_OnButtonUp:
     name: 
     stateID: 557563932
     transitionTiming: 2
