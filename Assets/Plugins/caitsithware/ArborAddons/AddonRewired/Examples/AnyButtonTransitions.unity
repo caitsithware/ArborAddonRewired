@@ -130,7 +130,6 @@ GameObject:
   - component: {fileID: 114047584}
   - component: {fileID: 114047583}
   - component: {fileID: 114047594}
-  - component: {fileID: 114047593}
   - component: {fileID: 114047592}
   - component: {fileID: 114047591}
   - component: {fileID: 114047590}
@@ -366,7 +365,7 @@ MonoBehaviour:
       x: 348
       y: -144
       width: 744
-      height: 696
+      height: 732
     showComment: 0
     nodeComment: 
     name: Any Button Hold
@@ -389,7 +388,7 @@ MonoBehaviour:
       x: 0
       y: -108
       width: 300
-      height: 306
+      height: 324
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -406,14 +405,13 @@ MonoBehaviour:
       x: 768
       y: -108
       width: 300
-      height: 450
+      height: 393
     showComment: 0
     nodeComment: 
     _Resident: 0
     _Behaviours:
     - {fileID: 114047578}
     - {fileID: 114047582}
-    - {fileID: 114047593}
     - {fileID: 114047592}
     _BreakPoint: 0
     name: Any Button Hold
@@ -422,7 +420,7 @@ MonoBehaviour:
     position:
       serializedVersion: 2
       x: 768
-      y: 360
+      y: 324
       width: 300
       height: 166
     showComment: 0
@@ -455,7 +453,7 @@ MonoBehaviour:
       x: 1152
       y: -108
       width: 300
-      height: 201
+      height: 219
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -502,7 +500,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1092
-        y: 588
+        y: 600
         width: 32
         height: 32
       showComment: 0
@@ -518,8 +516,8 @@ MonoBehaviour:
       _NodeID: 1285930301
       position:
         serializedVersion: 2
-        x: -48
-        y: 540
+        x: -36
+        y: 600
         width: 32
         height: 32
       showComment: 0
@@ -530,7 +528,7 @@ MonoBehaviour:
         transitionTiming: 2
         lineColorChanged: 1
         lineColor: {r: 1, g: 1, b: 1, a: 1}
-      direction: {x: 0.08009895, y: -0.99678695}
+      direction: {x: -1, y: 0}
 --- !u!4 &114047580
 Transform:
   m_ObjectHideFlags: 0
@@ -578,6 +576,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButtonDown:
     name: 
     stateID: 97063326
@@ -618,6 +617,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButton:
     name: 
     stateID: 1516180604
@@ -689,6 +689,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButtonUp:
     name: 
     stateID: 2014296670
@@ -1241,49 +1242,10 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButtonUp:
     name: 
     stateID: 1653422287
-    transitionTiming: 2
-    lineColorChanged: 0
-    lineColor: {r: 1, g: 1, b: 1, a: 1}
---- !u!114 &114047593
-MonoBehaviour:
-  m_ObjectHideFlags: 3
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 114047577}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eafd91b28fb7124dbeaa9b4b9a13281, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _NodeGraph: {fileID: 114047579}
-  _NodeID: 787814235
-  expanded: 1
-  _BehaviourEnabled: 1
-  m_IsSystemPlayer:
-    _Type: 0
-    _Value: 0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Probability: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
-  m_PlayerName:
-    _Type: 0
-    _Value: Player0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
-  m_OnButtonUp:
-    name: 
-    stateID: 0
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2029,7 +1991,8 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "Examples : Any Button Transitions\n\nSee ArborFSM object.\n\nActions :
-    \n    Fire : Left Mouse Button / Right Shoulder 2\n    Aim : Right Mouse Button
+    \n    Move Horizontal : A, D / Left Stick X\n    Move Vertical : W, S / Left Stick
+    Y\n    Fire : Left Mouse Button / Right Shoulder 2\n    Aim : Right Mouse Button
     \ / Left Sholder 2"
 --- !u!222 &1673027938
 CanvasRenderer:

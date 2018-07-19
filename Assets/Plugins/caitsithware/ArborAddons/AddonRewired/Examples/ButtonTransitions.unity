@@ -199,6 +199,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButton:
     name: 
     stateID: 1285930301
@@ -231,7 +232,7 @@ MonoBehaviour:
       height: 696
     showComment: 0
     nodeComment: 
-    name: Fire Hold
+    name: '"Fire" Hold'
     color: {r: 1, g: 1, b: 1, a: 1}
     _SerializeVersion: 1
   - _NodeGraph: {fileID: 114047579}
@@ -241,10 +242,10 @@ MonoBehaviour:
       x: 2016
       y: 96
       width: 720
-      height: 636
+      height: 660
     showComment: 0
     nodeComment: 
-    name: Aim Hold
+    name: '"Move Left" Hold'
     color: {r: 1, g: 1, b: 1, a: 1}
     _SerializeVersion: 1
   _DataBranchRerouteNodes:
@@ -279,7 +280,7 @@ MonoBehaviour:
       x: -24
       y: 288
       width: 300
-      height: 324
+      height: 342
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -288,15 +289,15 @@ MonoBehaviour:
     - {fileID: 114047586}
     - {fileID: 114047585}
     _BreakPoint: 0
-    name: Fire Down
+    name: '"Fire" Down'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 557563932
     position:
       serializedVersion: 2
-      x: 1224
+      x: 1116
       y: 252
       width: 300
-      height: 219
+      height: 237
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -304,7 +305,7 @@ MonoBehaviour:
     - {fileID: 114047583}
     - {fileID: 114047582}
     _BreakPoint: 0
-    name: Fire Up
+    name: '"Fire" Up'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 1516180604
     position:
@@ -312,7 +313,7 @@ MonoBehaviour:
       x: 708
       y: 108
       width: 300
-      height: 393
+      height: 429
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -321,7 +322,7 @@ MonoBehaviour:
     - {fileID: 114047578}
     - {fileID: 114047606}
     _BreakPoint: 0
-    name: Fire Hold
+    name: '"Fire" Hold'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 28060293
     position:
@@ -337,7 +338,7 @@ MonoBehaviour:
     - {fileID: 114047581}
     - {fileID: 114047591}
     _BreakPoint: 0
-    name: Begin Fire Hold
+    name: '"Fire" Begin Hold'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 1285930301
     position:
@@ -353,7 +354,7 @@ MonoBehaviour:
     - {fileID: 114047590}
     - {fileID: 114047589}
     _BreakPoint: 0
-    name: Counter Up
+    name: '"Fire" Counter Up'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 2014296670
     position:
@@ -376,7 +377,7 @@ MonoBehaviour:
       x: 1608
       y: 252
       width: 300
-      height: 236
+      height: 254
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -385,7 +386,7 @@ MonoBehaviour:
     - {fileID: 114047603}
     - {fileID: 114047602}
     _BreakPoint: 0
-    name: Aim Down
+    name: '"Move Left" Down'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 1784046367
     position:
@@ -393,7 +394,7 @@ MonoBehaviour:
       x: 2880
       y: 132
       width: 300
-      height: 219
+      height: 237
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -401,7 +402,7 @@ MonoBehaviour:
     - {fileID: 114047601}
     - {fileID: 114047600}
     _BreakPoint: 0
-    name: Aim Up
+    name: '"Move Left" Up'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 595179392
     position:
@@ -409,7 +410,7 @@ MonoBehaviour:
       x: 2412
       y: 132
       width: 300
-      height: 393
+      height: 429
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -418,7 +419,7 @@ MonoBehaviour:
     - {fileID: 114047598}
     - {fileID: 114047605}
     _BreakPoint: 0
-    name: Aim Hold
+    name: '"Move Left" Hold'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 1553796064
     position:
@@ -434,13 +435,13 @@ MonoBehaviour:
     - {fileID: 114047597}
     - {fileID: 114047596}
     _BreakPoint: 0
-    name: Begin Aim Hold
+    name: '"Move Left" Begin Hold'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 364929089
     position:
       serializedVersion: 2
       x: 2412
-      y: 552
+      y: 576
       width: 300
       height: 166
     showComment: 0
@@ -450,7 +451,7 @@ MonoBehaviour:
     - {fileID: 114047595}
     - {fileID: 114047594}
     _BreakPoint: 0
-    name: Counter Up
+    name: '"Move Left" Counter Up'
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 1323545761
     position:
@@ -540,8 +541,8 @@ MonoBehaviour:
       _NodeID: 863045155
       position:
         serializedVersion: 2
-        x: 1536
-        y: 756
+        x: 1548
+        y: 780
         width: 32
         height: 32
       showComment: 0
@@ -552,7 +553,7 @@ MonoBehaviour:
         transitionTiming: 2
         lineColorChanged: 1
         lineColor: {r: 1, g: 1, b: 1, a: 1}
-      direction: {x: 0.06086257, y: -0.9981462}
+      direction: {x: -1, y: 0}
 --- !u!4 &114047580
 Transform:
   m_ObjectHideFlags: 0
@@ -646,6 +647,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButtonUp:
     name: 
     stateID: 1652448765
@@ -678,7 +680,7 @@ MonoBehaviour:
       branchID: 0
   _String:
     _Type: 0
-    _Value: Fire Up
+    _Value: '"Fire" Up'
     _Parameter:
       container: {fileID: 0}
       id: 0
@@ -748,6 +750,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButtonDown:
     name: 
     stateID: 28060293
@@ -1891,7 +1894,7 @@ MonoBehaviour:
       branchID: 0
   _String:
     _Type: 0
-    _Value: Aim Hold
+    _Value: '"Move Left" Hold'
     _Parameter:
       container: {fileID: 0}
       id: 0
@@ -1938,13 +1941,14 @@ MonoBehaviour:
       branchID: 0
   m_ActionName:
     _Type: 0
-    _Value: Aim
+    _Value: Move Horizontal
     _Parameter:
       container: {fileID: 0}
       id: 0
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 2
   m_OnButton:
     name: 
     stateID: 364929089
@@ -2186,13 +2190,14 @@ MonoBehaviour:
       branchID: 0
   m_ActionName:
     _Type: 0
-    _Value: Aim
+    _Value: Move Horizontal
     _Parameter:
       container: {fileID: 0}
       id: 0
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 2
   m_OnButtonUp:
     name: 
     stateID: 1323545761
@@ -2225,7 +2230,7 @@ MonoBehaviour:
       branchID: 0
   _String:
     _Type: 0
-    _Value: Aim Up
+    _Value: '"Move Left" Up'
     _Parameter:
       container: {fileID: 0}
       id: 0
@@ -2272,13 +2277,14 @@ MonoBehaviour:
       branchID: 0
   m_ActionName:
     _Type: 0
-    _Value: Aim
+    _Value: Move Horizontal
     _Parameter:
       container: {fileID: 0}
       id: 0
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 2
   m_OnButtonDown:
     name: 
     stateID: 1553796064
@@ -2311,7 +2317,7 @@ MonoBehaviour:
       branchID: 0
   _String:
     _Type: 0
-    _Value: Aim Down
+    _Value: '"Move Left" Down'
     _Parameter:
       container: {fileID: 0}
       id: 0
@@ -2379,13 +2385,14 @@ MonoBehaviour:
       branchID: 0
   m_ActionName:
     _Type: 0
-    _Value: Aim
+    _Value: Move Horizontal
     _Parameter:
       container: {fileID: 0}
       id: 0
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 2
   m_OnButtonUp:
     name: 
     stateID: 2051912130
@@ -2435,6 +2442,7 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  m_AxisContribution: 0
   m_OnButtonUp:
     name: 
     stateID: 1024734555
@@ -3219,7 +3227,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Examples : Button Transitions\n\nSee ArborFSM object.\n\nActions : \n    Fire
+  m_Text: "Examples : Button Transitions\n\nSee ArborFSM object.\n\nActions : \n    Move
+    Horizontal : A, D / Left Stick X\n    Move Vertical : W, S / Left Stick Y\n    Fire
     : Left Mouse Button / Right Shoulder 2\n    Aim : Right Mouse Button  / Left Sholder
     2"
 --- !u!222 &1673027938
