@@ -7,9 +7,9 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 	using Arbor;
 	using Rewired;
 
-	[AddBehaviourMenu("caitsithware/Rewired/RewiredAnyButtonTransition")]
+	[AddBehaviourMenu("Rewired/RewiredAnyButtonDownTransition")]
 	[AddComponentMenu("")]
-	public class RewiredAnyButtonTransition : StateBehaviour
+	public class RewiredAnyButtonDownTransition : StateBehaviour
 	{
 		[SerializeField]
 		private FlexibleBool m_IsSystemPlayer = new FlexibleBool(false);
@@ -21,7 +21,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		private AxisContributionType m_AxisContribution = AxisContributionType.Any;
 
 		[SerializeField]
-		private StateLink m_OnButton = new StateLink();
+		private StateLink m_OnButtonDown = new StateLink();
 
 		private Player m_Player;
 
@@ -48,11 +48,11 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 			switch (m_AxisContribution)
 			{
 				case AxisContributionType.Any:
-					return m_Player.GetAnyButton() || m_Player.GetAnyNegativeButton();
+					return m_Player.GetAnyButtonDown() || m_Player.GetAnyNegativeButtonDown();
 				case AxisContributionType.Positive:
-					return m_Player.GetAnyButton();
+					return m_Player.GetAnyButtonDown();
 				case AxisContributionType.Negative:
-					return m_Player.GetAnyNegativeButton();
+					return m_Player.GetAnyNegativeButtonDown();
 			}
 
 			return false;
@@ -63,7 +63,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		{
 			if (CheckTransition())
 			{
-				Transition(m_OnButton);
+				Transition(m_OnButtonDown);
 			}
 		}
 	}
