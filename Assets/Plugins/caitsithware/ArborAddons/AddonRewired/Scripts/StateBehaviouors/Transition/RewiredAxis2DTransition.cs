@@ -13,9 +13,6 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 	public class RewiredAxis2DTransition : StateBehaviour
 	{
 		[SerializeField]
-		private FlexibleBool m_IsSystemPlayer = new FlexibleBool(false);
-
-		[SerializeField]
 		private FlexibleString m_PlayerName = new FlexibleString("Player0");
 
 		[SerializeField]
@@ -38,15 +35,8 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		// Use this for enter state
 		public override void OnStateBegin()
 		{
-			if (m_IsSystemPlayer.value)
-			{
-				m_Player = ReInput.players.GetSystemPlayer();
-			}
-			else
-			{
-				m_Player = ReInput.players.GetPlayer(m_PlayerName.value);
-			}
-
+			m_Player = ReInput.players.GetPlayer(m_PlayerName.value);
+			
 			m_CachedXAxisActionName = m_XAxisActionName.value;
 			m_CachedYAxisActionName = m_YAxisActionName.value;
 		}
