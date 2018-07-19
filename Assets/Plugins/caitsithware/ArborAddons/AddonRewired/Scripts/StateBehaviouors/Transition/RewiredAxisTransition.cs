@@ -8,7 +8,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 	using Arbor;
 	using Rewired;
 
-	[AddBehaviourMenu("Rewired/RewiredAxisTransition")]
+	[AddBehaviourMenu("Rewired/Transition/RewiredAxisTransition")]
 	[AddComponentMenu("")]
 	public class RewiredAxisTransition : StateBehaviour
 	{
