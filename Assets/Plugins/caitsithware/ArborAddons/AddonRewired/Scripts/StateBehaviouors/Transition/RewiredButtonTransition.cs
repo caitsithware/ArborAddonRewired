@@ -7,7 +7,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 	using Arbor;
 	using Rewired;
 
-	[AddBehaviourMenu("Rewired/RewiredButtonTransition")]
+	[AddBehaviourMenu("Rewired/Transition/RewiredButtonTransition")]
 	[AddComponentMenu("")]
 	public class RewiredButtonTransition : StateBehaviour
 	{
