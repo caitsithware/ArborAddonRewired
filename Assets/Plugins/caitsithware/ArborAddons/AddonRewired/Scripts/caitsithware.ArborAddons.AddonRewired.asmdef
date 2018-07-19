@@ -1,0 +1,9 @@
+{
+    "name": "caitsithware.ArborAddons.AddonRewired",
+    "references": [
+        "Arbor",
+        "Arbor.Core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": []
+}
