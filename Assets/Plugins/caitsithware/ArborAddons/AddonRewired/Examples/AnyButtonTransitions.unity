@@ -388,7 +388,7 @@ MonoBehaviour:
       x: 0
       y: -108
       width: 300
-      height: 324
+      height: 306
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
       x: 768
       y: -108
       width: 300
-      height: 393
+      height: 357
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -453,7 +453,7 @@ MonoBehaviour:
       x: 1152
       y: -108
       width: 300
-      height: 219
+      height: 201
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -557,16 +557,6 @@ MonoBehaviour:
   _NodeID: 1976681210
   expanded: 1
   _BehaviourEnabled: 1
-  m_IsSystemPlayer:
-    _Type: 0
-    _Value: 0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Probability: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
   m_PlayerName:
     _Type: 0
     _Value: Player0
@@ -598,16 +588,6 @@ MonoBehaviour:
   _NodeID: 787814235
   expanded: 1
   _BehaviourEnabled: 1
-  m_IsSystemPlayer:
-    _Type: 0
-    _Value: 0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Probability: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
   m_PlayerName:
     _Type: 0
     _Value: Player0
@@ -670,16 +650,6 @@ MonoBehaviour:
   _NodeID: 28060293
   expanded: 1
   _BehaviourEnabled: 1
-  m_IsSystemPlayer:
-    _Type: 0
-    _Value: 0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Probability: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
   m_PlayerName:
     _Type: 0
     _Value: Player0
@@ -1223,16 +1193,6 @@ MonoBehaviour:
   _NodeID: 787814235
   expanded: 1
   _BehaviourEnabled: 1
-  m_IsSystemPlayer:
-    _Type: 0
-    _Value: 0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Probability: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
   m_PlayerName:
     _Type: 0
     _Value: Player0
