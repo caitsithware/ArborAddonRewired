@@ -1,0 +1,14 @@
+#Unity
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+
+*.pidb
+*.csproj
+*.unityproj
+*.booproj
+
+*.sln
+*.suo
+*.userprefs
+.vs/
