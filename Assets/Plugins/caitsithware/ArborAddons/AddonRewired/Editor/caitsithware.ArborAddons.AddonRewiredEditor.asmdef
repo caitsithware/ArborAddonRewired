@@ -1,0 +1,12 @@
+{
+    "name": "caitsithware.ArborAddons.AddonRewiredEditor",
+    "references": [
+        "Arbor",
+        "Arbor.Core",
+        "caitsithware.ArborAddons.AddonRewired"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": []
+}
