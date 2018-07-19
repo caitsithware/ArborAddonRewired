@@ -1,16 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
-using Arbor;
 
 namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 {
 	using Arbor;
 	using Rewired;
 
-	[AddBehaviourMenu("caitsithware/Rewired/RewiredAxisTransition")]
+	[AddBehaviourMenu("Rewired/RewiredButtonTransition")]
 	[AddComponentMenu("")]
-	public class RewiredAxisTransition : StateBehaviour
+	public class RewiredButtonTransition : StateBehaviour
 	{
 		[SerializeField]
 		private FlexibleBool m_IsSystemPlayer = new FlexibleBool(false);
@@ -22,10 +21,10 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		private FlexibleString m_ActionName = new FlexibleString("");
 
 		[SerializeField]
-		private OutputSlotFloat m_OutputAxisValue = new OutputSlotFloat();
+		private AxisContributionType m_AxisContribution = AxisContributionType.Any;
 
 		[SerializeField]
-		private StateLink m_OnAxis = new StateLink();
+		private StateLink m_OnButton = new StateLink();
 
 		private Player m_Player;
 
@@ -46,25 +45,33 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 			m_CachedActionName = (m_Player != null) ? m_ActionName.value : "";
 		}
 
-		void CheckTransition()
+		bool CheckTransition()
 		{
 			if (m_Player == null || string.IsNullOrEmpty(m_CachedActionName))
 			{
-				return;
+				return false;
 			}
 
-			float axisValue = m_Player.GetAxis(m_CachedActionName);
-			if (axisValue != 0.0f)
+			switch (m_AxisContribution)
 			{
-				m_OutputAxisValue.SetValue(axisValue);
-				Transition(m_OnAxis);
+				case AxisContributionType.Any:
+					return m_Player.GetButton(m_CachedActionName) || m_Player.GetNegativeButton(m_CachedActionName);
+				case AxisContributionType.Positive:
+					return m_Player.GetButton(m_CachedActionName);
+				case AxisContributionType.Negative:
+					return m_Player.GetNegativeButton(m_CachedActionName);
 			}
+
+			return false;
 		}
 
 		// OnStateUpdate is called once per frame
 		public override void OnStateUpdate()
 		{
-			CheckTransition();
+			if (CheckTransition())
+			{
+				Transition(m_OnButton);
+			}
 		}
 	}
 }

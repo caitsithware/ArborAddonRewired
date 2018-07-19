@@ -1,15 +1,16 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using Arbor;
 
 namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 {
 	using Arbor;
 	using Rewired;
 
-	[AddBehaviourMenu("caitsithware/Rewired/RewiredAnyButtonUpTransition")]
+	[AddBehaviourMenu("Rewired/RewiredAxisTransition")]
 	[AddComponentMenu("")]
-	public class RewiredAnyButtonUpTransition : StateBehaviour
+	public class RewiredAxisTransition : StateBehaviour
 	{
 		[SerializeField]
 		private FlexibleBool m_IsSystemPlayer = new FlexibleBool(false);
@@ -18,13 +19,18 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		private FlexibleString m_PlayerName = new FlexibleString("Player0");
 
 		[SerializeField]
-		private AxisContributionType m_AxisContribution = AxisContributionType.Any;
+		private FlexibleString m_ActionName = new FlexibleString("");
 
 		[SerializeField]
-		private StateLink m_OnButtonUp = new StateLink();
+		private OutputSlotFloat m_OutputAxisValue = new OutputSlotFloat();
+
+		[SerializeField]
+		private StateLink m_OnAxis = new StateLink();
 
 		private Player m_Player;
 
+		private string m_CachedActionName;
+		
 		// Use this for enter state
 		public override void OnStateBegin()
 		{
@@ -36,35 +42,29 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 			{
 				m_Player = ReInput.players.GetPlayer(m_PlayerName.value);
 			}
+
+			m_CachedActionName = (m_Player != null) ? m_ActionName.value : "";
 		}
 
-		bool CheckTransition()
+		void CheckTransition()
 		{
-			if (m_Player == null)
+			if (m_Player == null || string.IsNullOrEmpty(m_CachedActionName))
 			{
-				return false;
+				return;
 			}
 
-			switch (m_AxisContribution)
+			float axisValue = m_Player.GetAxis(m_CachedActionName);
+			if (axisValue != 0.0f)
 			{
-				case AxisContributionType.Any:
-					return m_Player.GetAnyButtonUp() || m_Player.GetAnyNegativeButtonUp();
-				case AxisContributionType.Positive:
-					return m_Player.GetAnyButtonUp();
-				case AxisContributionType.Negative:
-					return m_Player.GetAnyNegativeButtonUp();
+				m_OutputAxisValue.SetValue(axisValue);
+				Transition(m_OnAxis);
 			}
-
-			return false;
 		}
 
 		// OnStateUpdate is called once per frame
 		public override void OnStateUpdate()
 		{
-			if ( CheckTransition() )
-			{
-				Transition(m_OnButtonUp);
-			}
+			CheckTransition();
 		}
 	}
 }
