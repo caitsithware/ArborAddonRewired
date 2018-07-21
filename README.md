@@ -18,6 +18,11 @@ https://www.assetstore.unity3d.com/#!/content/112239?aid=1101lGsc
 
 https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
 
+# Install
+
+* Download unitypackage from [Latest release](https://github.com/caitsithware/ArborAddonRewired/releases/latest)
+* Import ArborAddonRewired_x.y.z.unitypackage into your project
+
 # Main flow
 
 1. Preparation of Rewired
