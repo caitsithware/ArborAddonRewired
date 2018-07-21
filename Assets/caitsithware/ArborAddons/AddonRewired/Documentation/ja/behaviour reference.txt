@@ -1,0 +1,135 @@
+﻿# 挙動リファレンス
+
+## RewiredAnyButtonDownTransition
+
+何らかのボタンを押下した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名      | 内容                   |
+|-------------------|------------------------|
+| Player Name       | 入力を判定するPlayer名 |
+| Axis Contribution | 判定する軸方向のタイプ |
+| On Button Down    | 押下時の遷移           |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredAnyButtonDownTransition
+
+## RewiredAnyButtonTransition
+
+何らかのボタンを押下している間、遷移する。
+
+### プロパティ
+
+| プロパティ名      | 内容                   |
+|-------------------|------------------------|
+| Player Name       | 入力を判定するPlayer名 |
+| Axis Contribution | 判定する軸方向のタイプ |
+| On Button         | 押下時の遷移           |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredAnyButtonTransition
+
+## RewiredAnyButtonUpTransition
+
+何らかのボタンを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名      | 内容                   |
+|-------------------|------------------------|
+| Player Name       | 入力を判定するPlayer名 |
+| Axis Contribution | 判定する軸方向のタイプ |
+| On Button Up      | 離された時の遷移       |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredAnyButtonUpTransition
+
+## RewiredAxis2DTransition
+
+Axis2Dを入力した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名       | 内容                       |
+|--------------------|----------------------------|
+| Player Name        | 入力を判定するPlayer名     |
+| X Axis Action Name | 横軸入力を判定するAction名 |
+| Y Axis Action Name | 縦軸入力を判定するAction名 |
+| Output Axis Value  | Axis2Dの値を出力           |
+| On Axis 2D         | Axis2Dが入力された時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredAxis2DTransition
+
+## RewiredAxisTransition
+
+Axisを入力した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名       | 内容                       |
+|--------------------|----------------------------|
+| Player Name        | 入力を判定するPlayer名     |
+| Action Name        | 入力を判定するAction名     |
+| Output Axis Value  | Axisの値を出力             |
+| On Axis            | Axisが入力された時の遷移   |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredAxisTransition
+
+## RewiredButtonDownTransition
+
+ボタンを押下した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名       | 内容                       |
+|--------------------|----------------------------|
+| Player Name        | 入力を判定するPlayer名     |
+| Action Name        | 入力を判定するAction名     |
+| Axis Contribution  | 判定する軸方向のタイプ     |
+| On Button Down     | 押下時の遷移               |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonDownTransition
+
+## RewiredButtonTransition
+
+ボタンを押下している間、遷移する。
+
+### プロパティ
+
+| プロパティ名       | 内容                       |
+|--------------------|----------------------------|
+| Player Name        | 入力を判定するPlayer名     |
+| Action Name        | 入力を判定するAction名     |
+| Axis Contribution  | 判定する軸方向のタイプ     |
+| On Button          | 押下時の遷移               |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonTransition
+
+## RewiredButtonUpTransition
+
+ボタンを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名       | 内容                       |
+|--------------------|----------------------------|
+| Player Name        | 入力を判定するPlayer名     |
+| Action Name        | 入力を判定するAction名     |
+| Axis Contribution  | 判定する軸方向のタイプ     |
+| On Button Up       | 離した時の遷移             |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonUpTransition
