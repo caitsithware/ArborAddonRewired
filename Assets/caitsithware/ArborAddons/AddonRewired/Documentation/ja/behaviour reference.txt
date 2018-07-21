@@ -1,5 +1,71 @@
 ﻿# 挙動リファレンス
 
+## RewiredControlMapperClose
+
+ControlMapperを閉じる。
+
+### プロパティ
+
+| プロパティ名       | 内容                       |
+|--------------------|----------------------------|
+| Control Mapper     | ControlMapperの参照        |
+| Save On Close      | 閉じるときに保存するフラグ |
+
+### AddBehaviourMenu名
+
+Rewired/ControlMapper/RewiredControlMapperClose
+
+## RewiredControlMapperOpen
+
+ControlMapperを開く。
+
+### プロパティ
+
+| プロパティ名       | 内容                         |
+|--------------------|------------------------------|
+| Control Mapper     | ControlMapperの参照          |
+| Close On End       | ステート終了時に閉じるフラグ |
+| Save On Close      | 閉じるときに保存するフラグ   |
+| On Screen Closed   | 閉じた時の遷移               |
+
+### AddBehaviourMenu名
+
+Rewired/ControlMapper/RewiredControlMapperOpen
+
+## RewiredSetAllMapsEnabled
+
+全てのMapsのEnabledを設定する。
+
+### プロパティ
+
+| プロパティ名       | 内容                           |
+|--------------------|--------------------------------|
+| Player Name        | Mapsを設定するPlayer名         |
+| State              | enabledの状態                  |
+| Controller Flags   | 設定するControllerTypeのフラグ |
+
+### AddBehaviourMenu名
+
+Rewired/Maps/RewiredSetAllMapsEnabled
+
+## RewiredSetMapsEnabled
+
+MapsのEnabledを設定する。
+
+### プロパティ
+
+| プロパティ名       | 内容                                                   |
+|--------------------|--------------------------------------------------------|
+| Player Name        | Mapsを設定するPlayer名                                 |
+| Category Name      | Mapsを設定するCategory名                               |
+| Layout Name        | Mapsを設定するLayout名。指定しない場合はすべてのLayout |
+| State              | enabledの状態                                          |
+| Controller Flags   | 設定するControllerTypeのフラグ                         |
+
+### AddBehaviourMenu名
+
+Rewired/Maps/RewiredSetMapsEnabled
+
 ## RewiredAnyButtonDownTransition
 
 何らかのボタンを押下した瞬間に遷移する。
@@ -133,3 +199,35 @@ Rewired/Transition/RewiredButtonTransition
 ### AddBehaviourMenu名
 
 Rewired/Transition/RewiredButtonUpTransition
+
+## RewiredSetVibration
+
+バイブレーションを設定する。
+
+### プロパティ
+
+| プロパティ名       | 内容                               |
+|--------------------|------------------------------------|
+| Player Name        | バイブレーションを設定するPlayer名 |
+| Motor Level        | モーターのレベル                   |
+| Is Set Duration    | 振動する時間を設定するフラグ       |
+| Duration           | 振動する時間(秒)                   |
+| Stop On End        | ステート終了時に停止するフラグ     |
+
+### AddBehaviourMenu名
+
+Rewired/Vibration/RewiredSetVibration
+
+## RewiredStopVibration
+
+バイブレーションを停止する。
+
+### プロパティ
+
+| プロパティ名       | 内容                               |
+|--------------------|------------------------------------|
+| Player Name        | バイブレーションを停止するPlayer名 |
+
+### AddBehaviourMenu名
+
+Rewired/Vibration/RewiredStopVibration
