@@ -18,6 +18,11 @@ https://www.assetstore.unity3d.com/#!/content/112239?aid=1101lGsc
 
 https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
 
+# インストール
+
+* [Latest release](https://github.com/caitsithware/ArborAddonRewired/releases/latest) から unitypackageをダウンロード
+* プロジェクトに ArborAddonRewired_x.y.z.unitypackage をインポート
+
 # 主な流れ
 
 1. Rewiredの準備
