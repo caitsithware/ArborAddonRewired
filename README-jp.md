@@ -1,23 +1,5 @@
 ArborAddonRewiredは、Arbor3でRewiredを使用するためのアドオンです。
 
-# 開発環境
-
-| Tools   | Version    |
-|---------|------------|
-| Unity   | 2017.4.7f1 |
-| Arbor   | 3.2.0      |
-| Rewired | 1.1.17.1   |
-
-# アセットストア
-
-## Arbor 3
-
-https://www.assetstore.unity3d.com/#!/content/112239?aid=1101lGsc
-
-## Rewired
-
-https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
-
 # インストール
 
 * [Latest release](https://github.com/caitsithware/ArborAddonRewired/releases/latest) から unitypackageをダウンロード
@@ -54,6 +36,28 @@ https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
 
 サンプルシーンはプロジェクト内の以下のフォルダにあります。  
 Assets/caitsithware/ArborAddons/AddonRewired/Examples/
+
+# アセットストア
+
+## Arbor 3
+
+https://www.assetstore.unity3d.com/#!/content/112239?aid=1101lGsc
+
+## Rewired
+
+https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
+
+# サポートバージョン
+
+| Tools   | Version    |
+|---------|------------|
+| Unity   | 2017.4.7f1 |
+| Arbor   | 3.2.0      |
+| Rewired | 1.1.17.1   |
+
+# License
+
+zlib license
 
 # Copyright
 
