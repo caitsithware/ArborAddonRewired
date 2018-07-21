@@ -1,10 +1,3 @@
------------------------------------------------------
-                  ArborAddonRewired
-          Copyright (c) 2014-2018 Cait Sith Ware. All rights reserved.
-          https://caitsithware.com/wordpress/
-          support@caitsithware.com
------------------------------------------------------
-
 ArborAddonRewired is an addon to use Rewired on Arbor 3.
 
 # Development environment
@@ -55,9 +48,11 @@ https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
 # Examples
 
 Example scene is in the following folder in the project.
+
 Assets/caitsithware/ArborAddons/AddonRewired/Examples/
 
 # Copyright
 
 Arbor 3 : Copyright (c) 2014-2018 Cait Sith Ware. All rights reserved.
+
 Rewired : Copyright (c) 2018 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
