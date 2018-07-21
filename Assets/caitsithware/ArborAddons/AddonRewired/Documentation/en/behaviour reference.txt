@@ -1,0 +1,233 @@
+﻿# Behaviour Reference
+
+## RewiredControlMapperClose
+
+Close ControlMapper.
+
+### Properties
+
+| Property Name      | Contents                  |
+|--------------------|---------------------------|
+| Control Mapper     | ControlMapper Reference   |
+| Save On Close      | Flag to save when closing |
+
+### AddBehaviourMenu name
+
+Rewired/ControlMapper/RewiredControlMapperClose
+
+## RewiredControlMapperOpen
+
+Open ControlMapper.
+
+### Properties
+
+| Property Name      | Contents                          |
+|--------------------|-----------------------------------|
+| Control Mapper     | ControlMapper Reference           |
+| Close On End       | Flag to close at the end of state |
+| Save On Close      | Flag to save when closing         |
+| On Screen Closed   | Transition when closed            |
+
+### AddBehaviourMenu name
+
+Rewired/ControlMapper/RewiredControlMapperOpen
+
+## RewiredSetAllMapsEnabled
+
+Set Enabled of all Maps.
+
+### Properties
+
+| Property Name      | Contents                      |
+|--------------------|-------------------------------|
+| Player Name        | Player name to set Maps       |
+| State              | Enabled state                 |
+| Controller Flags   | Flag of ControllerType to set |
+
+### AddBehaviourMenu name
+
+Rewired/Maps/RewiredSetAllMapsEnabled
+
+## RewiredSetMapsEnabled
+
+Set Maps Enabled.
+
+### Properties
+
+| Property Name      | Contents                                              |
+|--------------------|-------------------------------------------------------|
+| Player Name        | Player name to set Maps                               |
+| Category Name      | Category name to set Maps                             |
+| Layout Name        | Layout name to set Maps. If not specified, all Layout |
+| State              | Enabled state                                         |
+| Controller Flags   | Flag of ControllerType to set                         |
+
+### AddBehaviourMenu name
+
+Rewired/Maps/RewiredSetMapsEnabled
+
+## RewiredAnyButtonDownTransition
+
+Transit at the moment when some button is pressed.
+
+### Properties
+
+| Property Name      | Contents                              |
+|--------------------|---------------------------------------|
+| Player Name        | Player name to determine input        |
+| Axis Contribution  | Type to determine for axial direction |
+| On Button Down     | Transition at the time of pressing    |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredAnyButtonDownTransition
+
+## RewiredAnyButtonTransition
+
+Transit while pressing some button.
+
+### Properties
+
+| Property Name      | Contents                              |
+|--------------------|---------------------------------------|
+| Player Name        | Player name to determine input        |
+| Axis Contribution  | Type to determine for axial direction |
+| On Button          | Transition at the time of pressing    |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredAnyButtonTransition
+
+## RewiredAnyButtonUpTransition
+
+Transit at the moment when some button is released.
+
+### Properties
+
+| Property Name      | Contents                              |
+|--------------------|---------------------------------------|
+| Player Name        | Player name to determine input        |
+| Axis Contribution  | Type to determine for axial direction |
+| On Button Up       | Transition at the time of pressing    |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredAnyButtonUpTransition
+
+## RewiredAxis2DTransition
+
+Transit at the moment Axis2D is input.
+
+### Properties
+
+| Property Name      | Contents                                       |
+|--------------------|------------------------------------------------|
+| Player Name        | Player name to determine input                 |
+| X Axis Action Name | Action name to determine horizontal axis input |
+| Y Axis Action Name | Action name to determine vertical axis input   |
+| Output Axis Value  | Output the value of Axis2D                     |
+| On Axis 2D         | Transition when Axis2D is input                |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredAxis2DTransition
+
+## RewiredAxisTransition
+
+Transit at the moment Axis is input.
+
+### Properties
+
+| Property Name      | Contents                       |
+|--------------------|--------------------------------|
+| Player Name        | Player name to determine input |
+| Action Name        | Action name to determine input |
+| Output Axis Value  | Output the value of Axis       |
+| On Axis            | Transition when Axis is input  |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredAxisTransition
+
+## RewiredButtonDownTransition
+
+Transit at the moment when the button is pressed.
+
+### Properties
+
+| Property Name      | Contents                              |
+|--------------------|---------------------------------------|
+| Player Name        | Player name to determine input        |
+| Action Name        | Action name to determine input        |
+| Axis Contribution  | Type to determine for axial direction |
+| On Button Down     | Transition at the time of pressing    |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonDownTransition
+
+## RewiredButtonTransition
+
+Transit while pressing button.
+
+### Properties
+
+| Property Name      | Contents                              |
+|--------------------|---------------------------------------|
+| Player Name        | Player name to determine input        |
+| Action Name        | Action name to determine input        |
+| Axis Contribution  | Type to determine for axial direction |
+| On Button Down     | Transition at the time of pressing    |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonTransition
+
+## RewiredButtonUpTransition
+
+Transit at the moment when button is released.
+
+### Properties
+
+| Property Name      | Contents                              |
+|--------------------|---------------------------------------|
+| Player Name        | Player name to determine input        |
+| Action Name        | Action name to determine input        |
+| Axis Contribution  | Type to determine for axial direction |
+| On Button Up       | Transition when released              |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonUpTransition
+
+## RewiredSetVibration
+
+Set vibration.
+
+### Properties
+
+| Property Name      | Contents                            |
+|--------------------|-------------------------------------|
+| Player Name        | Player name for setting vibrations  |
+| Motor Level        | Motor level                         |
+| Is Set Duration    | Flag for setting the vibration time |
+| Duration           | Vibration time (sec)                |
+| Stop On End        | Flag to stop at the end of state    |
+
+### AddBehaviourMenu name
+
+Rewired/Vibration/RewiredSetVibration
+
+## RewiredStopVibration
+
+Stop vibration.
+
+### Properties
+
+| Property Name      | Contents                      |
+|--------------------|-------------------------------|
+| Player Name        | Player name to stop vibrating |
+
+### AddBehaviourMenu name
+
+Rewired/Vibration/RewiredStopVibration
