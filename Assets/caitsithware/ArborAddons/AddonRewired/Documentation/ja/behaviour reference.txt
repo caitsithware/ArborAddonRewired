@@ -282,7 +282,7 @@ Rewired/Transition/RewiredButtonSinglePressDownTransition
 | Player Name                 | 入力を判定するPlayer名 |
 | Action Name                 | 入力を判定するAction名 |
 | Axis Contribution           | 判定する軸方向のタイプ |
-| On Button Double Press Hold | シングルプレス時の遷移 |
+| On Button Single Press Hold | シングルプレス時の遷移 |
 
 ### AddBehaviourMenu名
 
@@ -299,7 +299,7 @@ Rewired/Transition/RewiredButtonSinglePressHoldTransition
 | Player Name               | 入力を判定するPlayer名         |
 | Action Name               | 入力を判定するAction名         |
 | Axis Contribution         | 判定する軸方向のタイプ         |
-| On Button Double Press Up | シングルプレスを離した時の遷移 |
+| On Button Single Press Up | シングルプレスを離した時の遷移 |
 
 ### AddBehaviourMenu名
 
