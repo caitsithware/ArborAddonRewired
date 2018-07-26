@@ -200,6 +200,196 @@ Transit at the moment when button is released.
 
 Rewired/Transition/RewiredButtonUpTransition
 
+## RewiredButtonDoublePressDownTransition
+
+Transit at the moment the button is double pressed.
+
+### Properties
+
+| Property Name               | Contents                              |
+|-----------------------------|---------------------------------------|
+| Player Name                 | Player name to determine input        |
+| Action Name                 | Action name to determine input        |
+| Speed                       | Time to accept double press (sec)     |
+| Axis Contribution           | Type to determine for axial direction |
+| On Button Double Press Down | Transition at double press            |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonDoublePressDownTransition
+
+## RewiredButtonDoublePressHoldTransition
+
+Transit while double pressing the button.
+
+### Properties
+
+| Property Name               | Contents                              |
+|-----------------------------|---------------------------------------|
+| Player Name                 | Player name to determine input        |
+| Action Name                 | Action name to determine input        |
+| Speed                       | Time to accept double press (sec)     |
+| Axis Contribution           | Type to determine for axial direction |
+| On Button Double Press Hold | Transition at double press            |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonDoublePressHoldTransition
+
+## RewiredButtonDoublePressUpTransition
+
+Transit at the moment the button's double press is released.
+
+### Properties
+
+| Property Name             | Contents                                 |
+|---------------------------|------------------------------------------|
+| Player Name               | Player name to determine input           |
+| Action Name               | Action name to determine input           |
+| Speed                     | Time to accept double press (sec)        |
+| Axis Contribution         | Type to determine for axial direction    |
+| On Button Double Press Up | Transition when double press is released |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonDoublePressUpTransition
+
+## RewiredButtonSinglePressDownTransition
+
+Transit at the moment the button is single-pressed.
+
+### Properties
+
+| Property Name               | Contents                              |
+|-----------------------------|---------------------------------------|
+| Player Name                 | Player name to determine input        |
+| Action Name                 | Action name to determine input        |
+| Axis Contribution           | Type to determine for axial direction |
+| On Button Single Press Down | Transition at single press            |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonSinglePressDownTransition
+
+## RewiredButtonSinglePressHoldTransition
+
+Transit while button is single pressed.
+
+### Properties
+
+| Property Name               | Contents                              |
+|-----------------------------|---------------------------------------|
+| Player Name                 | Player name to determine input        |
+| Action Name                 | Action name to determine input        |
+| Axis Contribution           | Type to determine for axial direction |
+| On Button Single Press Hold | Transition at single press            |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonSinglePressHoldTransition
+
+## RewiredButtonSinglePressUpTransition
+
+Transit at the moment the single press of the button is released.
+
+### Properties
+
+| Property Name             | Contents                                 |
+|---------------------------|------------------------------------------|
+| Player Name               | Player name to determine input           |
+| Action Name               | Action name to determine input           |
+| Axis Contribution         | Type to determine for axial direction    |
+| On Button Single Press Up | Transition when single press is released |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonSinglePressUpTransition
+
+## RewiredButtonLongPressDownTransition
+
+Transit at the moment the button is pressed long.
+
+### Properties
+
+| Property Name             | Contents                              |
+|---------------------------|---------------------------------------|
+| Player Name               | Player name to determine input        |
+| Action Name               | Action name to determine input        |
+| Axis Contribution         | Type to determine for axial direction |
+| On Button Long Press Down | Transition at long press              |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonLongPressDownTransition
+
+## RewiredButtonLongPressTransition
+
+Transit while long pressing the button.
+
+### Properties
+
+| Property Name        | Contents                              |
+|----------------------|---------------------------------------|
+| Player Name          | Player name to determine input        |
+| Action Name          | Action name to determine input        |
+| Axis Contribution    | Type to determine for axial direction |
+| On Button Long Press | Transition at long press              |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonLongPressTransition
+
+## RewiredButtonLongPressUpTransition
+
+Transit at the moment the long press of the button is released.
+
+### Properties
+
+| Property Name           | Contents                               |
+|-------------------------|----------------------------------------|
+| Player Name             | Player name to determine input         |
+| Action Name             | Action name to determine input         |
+| Axis Contribution       | Type to determine for axial direction  |
+| On Button Long Press Up | Transition when long press is released |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonLongPressUpTransition
+
+## RewiredButtonShortPressDownTransition
+
+Transit at the moment when the button is short-pressed.
+
+### Properties
+
+| Property Name              | Contents                              |
+|----------------------------|---------------------------------------|
+| Player Name                | Player name to determine input        |
+| Action Name                | Action name to determine input        |
+| Axis Contribution          | Type to determine for axial direction |
+| On Button Short Press Down | Transition at short press             |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonShortPressDownTransition
+
+## RewiredButtonShortPressTransition
+
+Transit as long as the button is short-pressed.
+
+### Properties
+
+| Property Name         | Contents                              |
+|-----------------------|---------------------------------------|
+| Player Name           | Player name to determine input        |
+| Action Name           | Action name to determine input        |
+| Axis Contribution     | Type to determine for axial direction |
+| On Button Short Press | Transition at short press             |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonShortPressTransition
+
 ## RewiredSetVibration
 
 Set vibration.
