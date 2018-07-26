@@ -6,7 +6,7 @@ ControlMapperを閉じる。
 
 ### プロパティ
 
-| プロパティ名       | 内容                       |
+| プロパティ名       | 説明                       |
 |--------------------|----------------------------|
 | Control Mapper     | ControlMapperの参照        |
 | Save On Close      | 閉じるときに保存するフラグ |
@@ -21,7 +21,7 @@ ControlMapperを開く。
 
 ### プロパティ
 
-| プロパティ名       | 内容                         |
+| プロパティ名       | 説明                         |
 |--------------------|------------------------------|
 | Control Mapper     | ControlMapperの参照          |
 | Close On End       | ステート終了時に閉じるフラグ |
@@ -38,7 +38,7 @@ Rewired/ControlMapper/RewiredControlMapperOpen
 
 ### プロパティ
 
-| プロパティ名       | 内容                           |
+| プロパティ名       | 説明                           |
 |--------------------|--------------------------------|
 | Player Name        | Mapsを設定するPlayer名         |
 | State              | enabledの状態                  |
@@ -54,7 +54,7 @@ MapsのEnabledを設定する。
 
 ### プロパティ
 
-| プロパティ名       | 内容                                                   |
+| プロパティ名       | 説明                                                   |
 |--------------------|--------------------------------------------------------|
 | Player Name        | Mapsを設定するPlayer名                                 |
 | Category Name      | Mapsを設定するCategory名                               |
@@ -72,7 +72,7 @@ Rewired/Maps/RewiredSetMapsEnabled
 
 ### プロパティ
 
-| プロパティ名      | 内容                   |
+| プロパティ名      | 説明                   |
 |-------------------|------------------------|
 | Player Name       | 入力を判定するPlayer名 |
 | Axis Contribution | 判定する軸方向のタイプ |
@@ -88,7 +88,7 @@ Rewired/Transition/RewiredAnyButtonDownTransition
 
 ### プロパティ
 
-| プロパティ名      | 内容                   |
+| プロパティ名      | 説明                   |
 |-------------------|------------------------|
 | Player Name       | 入力を判定するPlayer名 |
 | Axis Contribution | 判定する軸方向のタイプ |
@@ -104,7 +104,7 @@ Rewired/Transition/RewiredAnyButtonTransition
 
 ### プロパティ
 
-| プロパティ名      | 内容                   |
+| プロパティ名      | 説明                   |
 |-------------------|------------------------|
 | Player Name       | 入力を判定するPlayer名 |
 | Axis Contribution | 判定する軸方向のタイプ |
@@ -120,7 +120,7 @@ Axis2Dを入力した瞬間に遷移する。
 
 ### プロパティ
 
-| プロパティ名       | 内容                       |
+| プロパティ名       | 説明                       |
 |--------------------|----------------------------|
 | Player Name        | 入力を判定するPlayer名     |
 | X Axis Action Name | 横軸入力を判定するAction名 |
@@ -138,7 +138,7 @@ Axisを入力した瞬間に遷移する。
 
 ### プロパティ
 
-| プロパティ名       | 内容                       |
+| プロパティ名       | 説明                       |
 |--------------------|----------------------------|
 | Player Name        | 入力を判定するPlayer名     |
 | Action Name        | 入力を判定するAction名     |
@@ -155,7 +155,7 @@ Rewired/Transition/RewiredAxisTransition
 
 ### プロパティ
 
-| プロパティ名       | 内容                       |
+| プロパティ名       | 説明                       |
 |--------------------|----------------------------|
 | Player Name        | 入力を判定するPlayer名     |
 | Action Name        | 入力を判定するAction名     |
@@ -172,7 +172,7 @@ Rewired/Transition/RewiredButtonDownTransition
 
 ### プロパティ
 
-| プロパティ名       | 内容                       |
+| プロパティ名       | 説明                       |
 |--------------------|----------------------------|
 | Player Name        | 入力を判定するPlayer名     |
 | Action Name        | 入力を判定するAction名     |
@@ -189,7 +189,7 @@ Rewired/Transition/RewiredButtonTransition
 
 ### プロパティ
 
-| プロパティ名       | 内容                       |
+| プロパティ名       | 説明                       |
 |--------------------|----------------------------|
 | Player Name        | 入力を判定するPlayer名     |
 | Action Name        | 入力を判定するAction名     |
@@ -206,7 +206,7 @@ Rewired/Transition/RewiredButtonUpTransition
 
 ### プロパティ
 
-| プロパティ名                | 内容                             |
+| プロパティ名                | 説明                             |
 |-----------------------------|----------------------------------|
 | Player Name                 | 入力を判定するPlayer名           |
 | Action Name                 | 入力を判定するAction名           |
@@ -224,7 +224,7 @@ Rewired/Transition/RewiredButtonDoublePressDownTransition
 
 ### プロパティ
 
-| プロパティ名                | 内容                             |
+| プロパティ名                | 説明                             |
 |-----------------------------|----------------------------------|
 | Player Name                 | 入力を判定するPlayer名           |
 | Action Name                 | 入力を判定するAction名           |
@@ -242,7 +242,7 @@ Rewired/Transition/RewiredButtonDoublePressHoldTransition
 
 ### プロパティ
 
-| プロパティ名              | 内容                             |
+| プロパティ名              | 説明                             |
 |---------------------------|----------------------------------|
 | Player Name               | 入力を判定するPlayer名           |
 | Action Name               | 入力を判定するAction名           |
@@ -260,7 +260,7 @@ Rewired/Transition/RewiredButtonDoublePressUpTransition
 
 ### プロパティ
 
-| プロパティ名                | 内容                   |
+| プロパティ名                | 説明                   |
 |-----------------------------|------------------------|
 | Player Name                 | 入力を判定するPlayer名 |
 | Action Name                 | 入力を判定するAction名 |
@@ -277,7 +277,7 @@ Rewired/Transition/RewiredButtonSinglePressDownTransition
 
 ### プロパティ
 
-| プロパティ名                | 内容                   |
+| プロパティ名                | 説明                   |
 |-----------------------------|------------------------|
 | Player Name                 | 入力を判定するPlayer名 |
 | Action Name                 | 入力を判定するAction名 |
@@ -294,7 +294,7 @@ Rewired/Transition/RewiredButtonSinglePressHoldTransition
 
 ### プロパティ
 
-| プロパティ名              | 内容                           |
+| プロパティ名              | 説明                           |
 |---------------------------|--------------------------------|
 | Player Name               | 入力を判定するPlayer名         |
 | Action Name               | 入力を判定するAction名         |
@@ -311,7 +311,7 @@ Rewired/Transition/RewiredButtonSinglePressUpTransition
 
 ### プロパティ
 
-| プロパティ名              | 内容                   |
+| プロパティ名              | 説明                   |
 |---------------------------|------------------------|
 | Player Name               | 入力を判定するPlayer名 |
 | Action Name               | 入力を判定するAction名 |
@@ -328,7 +328,7 @@ Rewired/Transition/RewiredButtonLongPressDownTransition
 
 ### プロパティ
 
-| プロパティ名         | 内容                   |
+| プロパティ名         | 説明                   |
 |----------------------|------------------------|
 | Player Name          | 入力を判定するPlayer名 |
 | Action Name          | 入力を判定するAction名 |
@@ -345,7 +345,7 @@ Rewired/Transition/RewiredButtonLongPressTransition
 
 ### プロパティ
 
-| プロパティ名            | 内容                           |
+| プロパティ名            | 説明                           |
 |-------------------------|--------------------------------|
 | Player Name             | 入力を判定するPlayer名         |
 | Action Name             | 入力を判定するAction名         |
@@ -362,7 +362,7 @@ Rewired/Transition/RewiredButtonLongPressUpTransition
 
 ### プロパティ
 
-| プロパティ名               | 内容                   |
+| プロパティ名               | 説明                   |
 |----------------------------|------------------------|
 | Player Name                | 入力を判定するPlayer名 |
 | Action Name                | 入力を判定するAction名 |
@@ -379,7 +379,7 @@ Rewired/Transition/RewiredButtonShortPressDownTransition
 
 ### プロパティ
 
-| プロパティ名          | 内容                   |
+| プロパティ名          | 説明                   |
 |-----------------------|------------------------|
 | Player Name           | 入力を判定するPlayer名 |
 | Action Name           | 入力を判定するAction名 |
@@ -396,7 +396,7 @@ Rewired/Transition/RewiredButtonShortPressTransition
 
 ### プロパティ
 
-| プロパティ名             | 内容                           |
+| プロパティ名             | 説明                           |
 |--------------------------|--------------------------------|
 | Player Name              | 入力を判定するPlayer名         |
 | Action Name              | 入力を判定するAction名         |
@@ -413,7 +413,7 @@ Rewired/Transition/RewiredButtonShortPressUpTransition
 
 ### プロパティ
 
-| プロパティ名               | 内容                     |
+| プロパティ名               | 説明                     |
 |----------------------------|--------------------------|
 | Player Name                | 入力を判定するPlayer名   |
 | Action Name                | 入力を判定するAction名   |
@@ -431,7 +431,7 @@ Rewired/Transition/RewiredButtonTimedPressDownTransition
 
 ### プロパティ
 
-| プロパティ名          | 内容                       |
+| プロパティ名          | 説明                       |
 |-----------------------|----------------------------|
 | Player Name           | 入力を判定するPlayer名     |
 | Action Name           | 入力を判定するAction名     |
@@ -451,7 +451,7 @@ Rewired/Transition/RewiredButtonTimedPressTransition
 
 ### プロパティ
 
-| プロパティ名             | 内容                       |
+| プロパティ名             | 説明                       |
 |--------------------------|----------------------------|
 | Player Name              | 入力を判定するPlayer名     |
 | Action Name              | 入力を判定するAction名     |
@@ -470,7 +470,7 @@ Rewired/Transition/RewiredButtonTimedPressUpTransition
 
 ### プロパティ
 
-| プロパティ名       | 内容                               |
+| プロパティ名       | 説明                               |
 |--------------------|------------------------------------|
 | Player Name        | バイブレーションを設定するPlayer名 |
 | Motor Level        | モーターのレベル                   |
@@ -488,7 +488,7 @@ Rewired/Vibration/RewiredSetVibration
 
 ### プロパティ
 
-| プロパティ名       | 内容                               |
+| プロパティ名       | 説明                               |
 |--------------------|------------------------------------|
 | Player Name        | バイブレーションを停止するPlayer名 |
 
