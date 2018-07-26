@@ -305,6 +305,57 @@ Rewired/Transition/RewiredButtonSinglePressHoldTransition
 
 Rewired/Transition/RewiredButtonSinglePressUpTransition
 
+## RewiredButtonLongPressDownTransition
+
+ボタンをロングプレスした瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名              | 内容                   |
+|---------------------------|------------------------|
+| Player Name               | 入力を判定するPlayer名 |
+| Action Name               | 入力を判定するAction名 |
+| Axis Contribution         | 判定する軸方向のタイプ |
+| On Button Long Press Down | ロングプレス時の遷移   |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonLongPressDownTransition
+
+## RewiredButtonLongPressTransition
+
+ボタンをロングプレスしている間、遷移する。
+
+### プロパティ
+
+| プロパティ名         | 内容                   |
+|----------------------|------------------------|
+| Player Name          | 入力を判定するPlayer名 |
+| Action Name          | 入力を判定するAction名 |
+| Axis Contribution    | 判定する軸方向のタイプ |
+| On Button Long Press | ロングプレス時の遷移   |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonLongPressTransition
+
+## RewiredButtonLongPressUpTransition
+
+ボタンのロングプレスを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名            | 内容                           |
+|-------------------------|--------------------------------|
+| Player Name             | 入力を判定するPlayer名         |
+| Action Name             | 入力を判定するAction名         |
+| Axis Contribution       | 判定する軸方向のタイプ         |
+| On Button Long Press Up | ロングプレスを離した時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonLongPressUpTransition
+
 ## RewiredSetVibration
 
 バイブレーションを設定する。
