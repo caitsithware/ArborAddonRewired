@@ -30,7 +30,7 @@ namespace caitsithware.ArborAddons.AddonRewired.StateBehaviours
 		public override void OnStateBegin()
 		{
 			m_Player = ReInput.players.GetPlayer(m_PlayerName.value);
-			m_CachedActionName = m_ActionName.value;
+			m_CachedActionName = (m_Player != null) ? m_ActionName.value : "";
 		}
 
 		bool CheckTransition()
