@@ -390,6 +390,80 @@ Transit as long as the button is short-pressed.
 
 Rewired/Transition/RewiredButtonShortPressTransition
 
+## RewiredButtonShortPressUpTransition
+
+Transit at the moment when you release the short press of the button.
+
+### Properties
+
+| Property Name            | Contents                              |
+|--------------------------|---------------------------------------|
+| Player Name              | Player name to determine input        |
+| Action Name              | Action name to determine input        |
+| Axis Contribution        | Type to determine for axial direction |
+| On Button Short Press Up | Transition when short press released  |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonShortPressUpTransition
+
+## RewiredButtonTimedPressDownTransition
+
+Transit at the moment when button is timed pressed.
+
+### Properties
+
+| Property Name              | Contents                              |
+|----------------------------|---------------------------------------|
+| Player Name                | Player name to determine input        |
+| Action Name                | Action name to determine input        |
+| Time                       | Timeed press determination time (sec) |
+| Axis Contribution          | Type to determine for axial direction |
+| On Button Timed Press Down | Transition at timed press             |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonTimedPressDownTransition
+
+## RewiredButtonTimedPressTransition
+
+Transit while button is timed pressed.
+
+### Properties
+
+| Property Name         | Contents                               |
+|-----------------------|----------------------------------------|
+| Player Name           | Player name to determine input         |
+| Action Name           | Action name to determine input         |
+| Time                  | Timeed press determination time (sec)  |
+| Expire In             | Timed press expiration time (sec)      |
+| Axis Contribution     | Type to determine for axial direction  |
+| On Button Timed Press | Transition at timed press              |
+| On Expire Or Unpress  | Transition when expired or not pressed |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonTimedPressTransition
+
+## RewiredButtonTimedPressUpTransition
+
+Transit at the moment when you release the timed press of the button.
+
+### Properties
+
+| Property Name            | Contents                              |
+|--------------------------|---------------------------------------|
+| Player Name              | Player name to determine input        |
+| Action Name              | Action name to determine input        |
+| Time                     | Timeed press determination time (sec) |
+| Expire In                | Timed press expiration time (sec)     |
+| Axis Contribution        | Type to determine for axial direction |
+| On Button Timed Press Up | Transition when releasing timed press |
+
+### AddBehaviourMenu name
+
+Rewired/Transition/RewiredButtonTimedPressUpTransition
+
 ## RewiredSetVibration
 
 Set vibration.
