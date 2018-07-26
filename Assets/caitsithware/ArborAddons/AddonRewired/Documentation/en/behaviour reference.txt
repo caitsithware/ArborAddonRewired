@@ -6,7 +6,7 @@ Close ControlMapper.
 
 ### Properties
 
-| Property Name      | Contents                  |
+| Property Name      | Description               |
 |--------------------|---------------------------|
 | Control Mapper     | ControlMapper Reference   |
 | Save On Close      | Flag to save when closing |
@@ -21,7 +21,7 @@ Open ControlMapper.
 
 ### Properties
 
-| Property Name      | Contents                          |
+| Property Name      | Description                       |
 |--------------------|-----------------------------------|
 | Control Mapper     | ControlMapper Reference           |
 | Close On End       | Flag to close at the end of state |
@@ -38,7 +38,7 @@ Set Enabled of all Maps.
 
 ### Properties
 
-| Property Name      | Contents                      |
+| Property Name      | Description                   |
 |--------------------|-------------------------------|
 | Player Name        | Player name to set Maps       |
 | State              | Enabled state                 |
@@ -54,7 +54,7 @@ Set Maps Enabled.
 
 ### Properties
 
-| Property Name      | Contents                                              |
+| Property Name      | Description                                           |
 |--------------------|-------------------------------------------------------|
 | Player Name        | Player name to set Maps                               |
 | Category Name      | Category name to set Maps                             |
@@ -72,7 +72,7 @@ Transit at the moment when some button is pressed.
 
 ### Properties
 
-| Property Name      | Contents                              |
+| Property Name      | Description                           |
 |--------------------|---------------------------------------|
 | Player Name        | Player name to determine input        |
 | Axis Contribution  | Type to determine for axial direction |
@@ -88,7 +88,7 @@ Transit while pressing some button.
 
 ### Properties
 
-| Property Name      | Contents                              |
+| Property Name      | Description                           |
 |--------------------|---------------------------------------|
 | Player Name        | Player name to determine input        |
 | Axis Contribution  | Type to determine for axial direction |
@@ -104,7 +104,7 @@ Transit at the moment when some button is released.
 
 ### Properties
 
-| Property Name      | Contents                              |
+| Property Name      | Description                           |
 |--------------------|---------------------------------------|
 | Player Name        | Player name to determine input        |
 | Axis Contribution  | Type to determine for axial direction |
@@ -120,7 +120,7 @@ Transit at the moment Axis2D is input.
 
 ### Properties
 
-| Property Name      | Contents                                       |
+| Property Name      | Description                                    |
 |--------------------|------------------------------------------------|
 | Player Name        | Player name to determine input                 |
 | X Axis Action Name | Action name to determine horizontal axis input |
@@ -138,7 +138,7 @@ Transit at the moment Axis is input.
 
 ### Properties
 
-| Property Name      | Contents                       |
+| Property Name      | Description                    |
 |--------------------|--------------------------------|
 | Player Name        | Player name to determine input |
 | Action Name        | Action name to determine input |
@@ -155,7 +155,7 @@ Transit at the moment when the button is pressed.
 
 ### Properties
 
-| Property Name      | Contents                              |
+| Property Name      | Description                           |
 |--------------------|---------------------------------------|
 | Player Name        | Player name to determine input        |
 | Action Name        | Action name to determine input        |
@@ -172,7 +172,7 @@ Transit while pressing button.
 
 ### Properties
 
-| Property Name      | Contents                              |
+| Property Name      | Description                           |
 |--------------------|---------------------------------------|
 | Player Name        | Player name to determine input        |
 | Action Name        | Action name to determine input        |
@@ -189,7 +189,7 @@ Transit at the moment when button is released.
 
 ### Properties
 
-| Property Name      | Contents                              |
+| Property Name      | Description                           |
 |--------------------|---------------------------------------|
 | Player Name        | Player name to determine input        |
 | Action Name        | Action name to determine input        |
@@ -206,7 +206,7 @@ Transit at the moment the button is double pressed.
 
 ### Properties
 
-| Property Name               | Contents                              |
+| Property Name               | Description                           |
 |-----------------------------|---------------------------------------|
 | Player Name                 | Player name to determine input        |
 | Action Name                 | Action name to determine input        |
@@ -224,7 +224,7 @@ Transit while double pressing the button.
 
 ### Properties
 
-| Property Name               | Contents                              |
+| Property Name               | Description                           |
 |-----------------------------|---------------------------------------|
 | Player Name                 | Player name to determine input        |
 | Action Name                 | Action name to determine input        |
@@ -242,7 +242,7 @@ Transit at the moment the button's double press is released.
 
 ### Properties
 
-| Property Name             | Contents                                 |
+| Property Name             | Description                              |
 |---------------------------|------------------------------------------|
 | Player Name               | Player name to determine input           |
 | Action Name               | Action name to determine input           |
@@ -260,7 +260,7 @@ Transit at the moment the button is single-pressed.
 
 ### Properties
 
-| Property Name               | Contents                              |
+| Property Name               | Description                           |
 |-----------------------------|---------------------------------------|
 | Player Name                 | Player name to determine input        |
 | Action Name                 | Action name to determine input        |
@@ -277,7 +277,7 @@ Transit while button is single pressed.
 
 ### Properties
 
-| Property Name               | Contents                              |
+| Property Name               | Description                           |
 |-----------------------------|---------------------------------------|
 | Player Name                 | Player name to determine input        |
 | Action Name                 | Action name to determine input        |
@@ -294,7 +294,7 @@ Transit at the moment the single press of the button is released.
 
 ### Properties
 
-| Property Name             | Contents                                 |
+| Property Name             | Description                              |
 |---------------------------|------------------------------------------|
 | Player Name               | Player name to determine input           |
 | Action Name               | Action name to determine input           |
@@ -311,7 +311,7 @@ Transit at the moment the button is pressed long.
 
 ### Properties
 
-| Property Name             | Contents                              |
+| Property Name             | Description                           |
 |---------------------------|---------------------------------------|
 | Player Name               | Player name to determine input        |
 | Action Name               | Action name to determine input        |
@@ -328,7 +328,7 @@ Transit while long pressing the button.
 
 ### Properties
 
-| Property Name        | Contents                              |
+| Property Name        | Description                           |
 |----------------------|---------------------------------------|
 | Player Name          | Player name to determine input        |
 | Action Name          | Action name to determine input        |
@@ -345,7 +345,7 @@ Transit at the moment the long press of the button is released.
 
 ### Properties
 
-| Property Name           | Contents                               |
+| Property Name           | Description                            |
 |-------------------------|----------------------------------------|
 | Player Name             | Player name to determine input         |
 | Action Name             | Action name to determine input         |
@@ -362,7 +362,7 @@ Transit at the moment when the button is short-pressed.
 
 ### Properties
 
-| Property Name              | Contents                              |
+| Property Name              | Description                           |
 |----------------------------|---------------------------------------|
 | Player Name                | Player name to determine input        |
 | Action Name                | Action name to determine input        |
@@ -379,7 +379,7 @@ Transit as long as the button is short-pressed.
 
 ### Properties
 
-| Property Name         | Contents                              |
+| Property Name         | Description                           |
 |-----------------------|---------------------------------------|
 | Player Name           | Player name to determine input        |
 | Action Name           | Action name to determine input        |
@@ -396,7 +396,7 @@ Transit at the moment when you release the short press of the button.
 
 ### Properties
 
-| Property Name            | Contents                              |
+| Property Name            | Description                           |
 |--------------------------|---------------------------------------|
 | Player Name              | Player name to determine input        |
 | Action Name              | Action name to determine input        |
@@ -413,7 +413,7 @@ Transit at the moment when button is timed pressed.
 
 ### Properties
 
-| Property Name              | Contents                              |
+| Property Name              | Description                           |
 |----------------------------|---------------------------------------|
 | Player Name                | Player name to determine input        |
 | Action Name                | Action name to determine input        |
@@ -431,7 +431,7 @@ Transit while button is timed pressed.
 
 ### Properties
 
-| Property Name         | Contents                               |
+| Property Name         | Description                            |
 |-----------------------|----------------------------------------|
 | Player Name           | Player name to determine input         |
 | Action Name           | Action name to determine input         |
@@ -451,7 +451,7 @@ Transit at the moment when you release the timed press of the button.
 
 ### Properties
 
-| Property Name            | Contents                              |
+| Property Name            | Description                           |
 |--------------------------|---------------------------------------|
 | Player Name              | Player name to determine input        |
 | Action Name              | Action name to determine input        |
@@ -470,7 +470,7 @@ Set vibration.
 
 ### Properties
 
-| Property Name      | Contents                            |
+| Property Name      | Description                         |
 |--------------------|-------------------------------------|
 | Player Name        | Player name for setting vibrations  |
 | Motor Level        | Motor level                         |
@@ -488,7 +488,7 @@ Stop vibration.
 
 ### Properties
 
-| Property Name      | Contents                      |
+| Property Name      | Description                   |
 |--------------------|-------------------------------|
 | Player Name        | Player name to stop vibrating |
 
