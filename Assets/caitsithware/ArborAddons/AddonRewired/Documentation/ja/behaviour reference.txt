@@ -407,6 +407,63 @@ Rewired/Transition/RewiredButtonShortPressTransition
 
 Rewired/Transition/RewiredButtonShortPressUpTransition
 
+## RewiredButtonTimedPressDownTransition
+
+ボタンを時限プレスした瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名               | 内容                     |
+|----------------------------|--------------------------|
+| Player Name                | 入力を判定するPlayer名   |
+| Action Name                | 入力を判定するAction名   |
+| Time                       | 時限プレス判定の時間(秒) |
+| Axis Contribution          | 判定する軸方向のタイプ   |
+| On Button Timed Press Down | 時限プレス時の遷移       |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonTimedPressDownTransition
+
+## RewiredButtonTimedPressTransition
+
+ボタンを時限プレスしている間、遷移する。
+
+### プロパティ
+
+| プロパティ名          | 内容                       |
+|-----------------------|----------------------------|
+| Player Name           | 入力を判定するPlayer名     |
+| Action Name           | 入力を判定するAction名     |
+| Time                  | 時限プレス判定の時間(秒)   |
+| Expire In             | 時限プレスの失効時間(秒)   |
+| Axis Contribution     | 判定する軸方向のタイプ     |
+| On Button Timed Press | 時限プレス時の遷移         |
+| On Expire Or Unpress  | 失効か押していない時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonTimedPressTransition
+
+## RewiredButtonTimedPressUpTransition
+
+ボタンの時限プレスを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名             | 内容                       |
+|--------------------------|----------------------------|
+| Player Name              | 入力を判定するPlayer名     |
+| Action Name              | 入力を判定するAction名     |
+| Time                     | 時限プレス判定の時間(秒)   |
+| Expire In                | 時限プレスの失効時間(秒)   |
+| Axis Contribution        | 判定する軸方向のタイプ     |
+| On Button Timed Press Up | 時限プレスを離した時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonTimedPressUpTransition
+
 ## RewiredSetVibration
 
 バイブレーションを設定する。
