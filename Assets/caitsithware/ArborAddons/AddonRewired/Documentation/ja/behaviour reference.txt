@@ -200,6 +200,60 @@ Rewired/Transition/RewiredButtonTransition
 
 Rewired/Transition/RewiredButtonUpTransition
 
+## RewiredButtonDoublePressDownTransition
+
+ボタンをダブルプレスした瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名                | 内容                             |
+|-----------------------------|----------------------------------|
+| Player Name                 | 入力を判定するPlayer名           |
+| Action Name                 | 入力を判定するAction名           |
+| Speed                       | ダブルプレスを受け付ける時間(秒) |
+| Axis Contribution           | 判定する軸方向のタイプ           |
+| On Button Double Press Down | ダブルプレス時の遷移             |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonDoublePressDownTransition
+
+## RewiredButtonDoublePressHoldTransition
+
+ボタンをダブルプレスしている間、遷移する。
+
+### プロパティ
+
+| プロパティ名                | 内容                             |
+|-----------------------------|----------------------------------|
+| Player Name                 | 入力を判定するPlayer名           |
+| Action Name                 | 入力を判定するAction名           |
+| Speed                       | ダブルプレスを受け付ける時間(秒) |
+| Axis Contribution           | 判定する軸方向のタイプ           |
+| On Button Double Press Hold | ダブルプレス時の遷移             |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonDoublePressHoldTransition
+
+## RewiredButtonDoublePressUpTransition
+
+ボタンのダブルプレスを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名              | 内容                             |
+|---------------------------|----------------------------------|
+| Player Name               | 入力を判定するPlayer名           |
+| Action Name               | 入力を判定するAction名           |
+| Speed                     | ダブルプレスを受け付ける時間(秒) |
+| Axis Contribution         | 判定する軸方向のタイプ           |
+| On Button Double Press Up | ダブルプレスを離した時の遷移     |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonDoublePressUpTransition
+
 ## RewiredSetVibration
 
 バイブレーションを設定する。
