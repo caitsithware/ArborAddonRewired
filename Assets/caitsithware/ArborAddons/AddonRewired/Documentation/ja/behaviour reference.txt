@@ -254,6 +254,57 @@ Rewired/Transition/RewiredButtonDoublePressHoldTransition
 
 Rewired/Transition/RewiredButtonDoublePressUpTransition
 
+## RewiredButtonSinglePressDownTransition
+
+ボタンをシングルプレスした瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名                | 内容                   |
+|-----------------------------|------------------------|
+| Player Name                 | 入力を判定するPlayer名 |
+| Action Name                 | 入力を判定するAction名 |
+| Axis Contribution           | 判定する軸方向のタイプ |
+| On Button Single Press Down | シングルプレス時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonSinglePressDownTransition
+
+## RewiredButtonSinglePressHoldTransition
+
+ボタンをシングルプレスしている間、遷移する。
+
+### プロパティ
+
+| プロパティ名                | 内容                   |
+|-----------------------------|------------------------|
+| Player Name                 | 入力を判定するPlayer名 |
+| Action Name                 | 入力を判定するAction名 |
+| Axis Contribution           | 判定する軸方向のタイプ |
+| On Button Double Press Hold | シングルプレス時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonSinglePressHoldTransition
+
+## RewiredButtonSinglePressUpTransition
+
+ボタンのシングルプレスを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名              | 内容                           |
+|---------------------------|--------------------------------|
+| Player Name               | 入力を判定するPlayer名         |
+| Action Name               | 入力を判定するAction名         |
+| Axis Contribution         | 判定する軸方向のタイプ         |
+| On Button Double Press Up | シングルプレスを離した時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonSinglePressUpTransition
+
 ## RewiredSetVibration
 
 バイブレーションを設定する。
