@@ -350,11 +350,62 @@ Rewired/Transition/RewiredButtonLongPressTransition
 | Player Name             | 入力を判定するPlayer名         |
 | Action Name             | 入力を判定するAction名         |
 | Axis Contribution       | 判定する軸方向のタイプ         |
-| On Button Long Press Up | ロングプレスを離した時の遷移 |
+| On Button Long Press Up | ロングプレスを離した時の遷移   |
 
 ### AddBehaviourMenu名
 
 Rewired/Transition/RewiredButtonLongPressUpTransition
+
+## RewiredButtonShortPressDownTransition
+
+ボタンをショートプレスした瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名               | 内容                   |
+|----------------------------|------------------------|
+| Player Name                | 入力を判定するPlayer名 |
+| Action Name                | 入力を判定するAction名 |
+| Axis Contribution          | 判定する軸方向のタイプ |
+| On Button Short Press Down | ショートプレス時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonShortPressDownTransition
+
+## RewiredButtonShortPressTransition
+
+ボタンをショートプレスしている間、遷移する。
+
+### プロパティ
+
+| プロパティ名          | 内容                   |
+|-----------------------|------------------------|
+| Player Name           | 入力を判定するPlayer名 |
+| Action Name           | 入力を判定するAction名 |
+| Axis Contribution     | 判定する軸方向のタイプ |
+| On Button Short Press | ショートプレス時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonShortPressTransition
+
+## RewiredButtonShortPressUpTransition
+
+ボタンのショートプレスを離した瞬間に遷移する。
+
+### プロパティ
+
+| プロパティ名             | 内容                           |
+|--------------------------|--------------------------------|
+| Player Name              | 入力を判定するPlayer名         |
+| Action Name              | 入力を判定するAction名         |
+| Axis Contribution        | 判定する軸方向のタイプ         |
+| On Button Short Press Up | ショートプレスを離した時の遷移 |
+
+### AddBehaviourMenu名
+
+Rewired/Transition/RewiredButtonShortPressUpTransition
 
 ## RewiredSetVibration
 
