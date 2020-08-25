@@ -2,6 +2,9 @@ ArborAddonRewired is an addon to use Rewired on Arbor 3.
 
 # Install
 
+* Import Rewired into your project.
+* Install Rewired Control Mapper.
+* Import Arbor into your project.
 * Download unitypackage from [Latest release](https://github.com/caitsithware/ArborAddonRewired/releases/latest)
 * Import ArborAddonRewired_x.y.z.unitypackage into your project
 
@@ -41,9 +44,9 @@ Assets/caitsithware/ArborAddons/AddonRewired/Examples/
 
 | Tools   | Version    |
 |---------|------------|
-| Unity   | 2017.4.7f1 |
-| Arbor   | 3.2.0      |
-| Rewired | 1.1.17.1   |
+| Unity   | 2017.4.40f1 |
+| Arbor   | 3.7.0      |
+| Rewired | 1.1.36.0   |
 
 # Asset Store
 
@@ -61,5 +64,5 @@ zlib license
 
 # Copyright
 
-* Arbor 3 : Copyright (c) 2014-2018 Cait Sith Ware. All rights reserved.
+* Arbor 3 : Copyright (c) 2014-2020 Cait Sith Ware. All rights reserved.
 * Rewired : Copyright (c) 2018 Augie R. Maddox, Guavaman Enterprises. All rights reserved.
