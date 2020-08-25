@@ -169,14 +169,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1784046367
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -184,8 +190,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Move Horizontal
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -208,7 +219,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphName: New StateMachine
+  debugInfiniteLoopSettings:
+    maxLoopCount: 10000
+    enableLogging: 1
+    enableBreak: 0
   _OwnerBehaviour: {fileID: 0}
+  _ParameterContainer: {fileID: 0}
   _Calculators: []
   _Comments: []
   _Groups:
@@ -224,7 +240,13 @@ MonoBehaviour:
     nodeComment: 
     name: '"Fire" Hold'
     color: {r: 1, g: 1, b: 1, a: 1}
-    _SerializeVersion: 1
+    autoAlignment: 0
+    _SerializeVersion:
+      _Version: 0
+      _IsInitialized: 1
+      _IsVersioning: 1
+    _SerializeVersionOld: 1
+    _IsInitializedOld: 0
   - _NodeGraph: {fileID: 114047579}
     _NodeID: 134678786
     position:
@@ -232,12 +254,18 @@ MonoBehaviour:
       x: 2016
       y: 96
       width: 720
-      height: 660
+      height: 696
     showComment: 0
     nodeComment: 
     name: '"Move Left" Hold'
     color: {r: 1, g: 1, b: 1, a: 1}
-    _SerializeVersion: 1
+    autoAlignment: 0
+    _SerializeVersion:
+      _Version: 0
+      _IsInitialized: 1
+      _IsVersioning: 1
+    _SerializeVersionOld: 1
+    _IsInitializedOld: 0
   _DataBranchRerouteNodes:
     _Nodes: []
   _DataBranchies: []
@@ -255,7 +283,7 @@ MonoBehaviour:
       x: -396
       y: 288
       width: 300
-      height: 61
+      height: 82
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -270,7 +298,7 @@ MonoBehaviour:
       x: -24
       y: 288
       width: 300
-      height: 324
+      height: 333
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -287,7 +315,7 @@ MonoBehaviour:
       x: 1116
       y: 252
       width: 300
-      height: 219
+      height: 222
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -303,7 +331,7 @@ MonoBehaviour:
       x: 708
       y: 108
       width: 300
-      height: 393
+      height: 420
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -320,7 +348,7 @@ MonoBehaviour:
       x: 336
       y: 228
       width: 300
-      height: 145
+      height: 168
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -336,7 +364,7 @@ MonoBehaviour:
       x: 708
       y: 552
       width: 300
-      height: 166
+      height: 193
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -352,7 +380,7 @@ MonoBehaviour:
       x: -396
       y: 84
       width: 300
-      height: 147
+      height: 153
     showComment: 0
     nodeComment: 
     _Resident: 1
@@ -367,7 +395,7 @@ MonoBehaviour:
       x: 1608
       y: 252
       width: 300
-      height: 324
+      height: 333
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -384,7 +412,7 @@ MonoBehaviour:
       x: 2880
       y: 132
       width: 300
-      height: 219
+      height: 222
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -400,7 +428,7 @@ MonoBehaviour:
       x: 2412
       y: 132
       width: 300
-      height: 393
+      height: 420
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -417,7 +445,7 @@ MonoBehaviour:
       x: 2040
       y: 252
       width: 300
-      height: 145
+      height: 168
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -433,7 +461,7 @@ MonoBehaviour:
       x: 2412
       y: 576
       width: 300
-      height: 166
+      height: 193
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -449,7 +477,7 @@ MonoBehaviour:
       x: 3276
       y: 132
       width: 300
-      height: 61
+      height: 63
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -515,7 +543,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 2736
-        y: 780
+        y: 816
         width: 32
         height: 32
       showComment: 0
@@ -532,7 +560,7 @@ MonoBehaviour:
       position:
         serializedVersion: 2
         x: 1548
-        y: 780
+        y: 816
         width: 32
         height: 32
       showComment: 0
@@ -570,28 +598,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 28060293
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 486298488}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _String:
     _Type: 0
     _Value: Fire Hold
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ChangeTimingUpdate: 0
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
 --- !u!114 &114047582
@@ -607,14 +649,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 595179392
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -622,8 +670,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Move Horizontal
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -647,28 +700,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 557563932
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 486298488}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _String:
     _Type: 0
     _Value: '"Fire" Up'
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ChangeTimingUpdate: 0
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
 --- !u!114 &114047584
@@ -684,6 +751,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1323545761
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _TransitionTiming: 0
@@ -700,14 +768,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 557563932
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -715,8 +789,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Fire
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -740,28 +819,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 132679328
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 486298488}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _String:
     _Type: 0
     _Value: Fire Down
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ChangeTimingUpdate: 0
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
 --- !u!114 &114047587
@@ -777,18 +870,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1652448765
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   reference:
-    container: {fileID: 375337570}
+    _Type: 0
+    _Container: {fileID: 375337570}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 1976681210
+    name: 
+  _ParameterType: 0
+  _ReferenceType:
+    _AssemblyTypeName: 
   function: 0
   _IntValue:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -798,8 +905,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -809,8 +921,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -820,8 +937,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -830,17 +952,42 @@ MonoBehaviour:
     _Type: 0
     _Value: 
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _EnumValue:
+    _Type: 0
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _GameObjectValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -848,8 +995,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -857,8 +1009,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -866,8 +1023,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0, w: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -880,8 +1042,13 @@ MonoBehaviour:
       width: 0
       height: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -891,8 +1058,13 @@ MonoBehaviour:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -900,56 +1072,93 @@ MonoBehaviour:
     _Type: 0
     _Value: {r: 1, g: 1, b: 1, a: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _TransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RectTransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RigidbodyValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _Rigidbody2DValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ComponentValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _SerializeVersion: 1
   _OldIntValue: 0
   _OldFloatValue: 0
@@ -967,192 +1176,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1516180604
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
-  _Conditions:
-  - _Reference:
-      container: {fileID: 375337570}
-      id: 1976681210
-    _CompareType: 3
-    _IntValue:
-      _Type: 0
+  _ConditionList:
+    _Conditions:
+    - _Reference:
+        _Type: 0
+        _Container: {fileID: 375337570}
+        _Slot:
+          nodeGraph: {fileID: 0}
+          branchID: 0
+        id: 1976681210
+        name: 
+      _ParameterType: 0
+      _ReferenceType:
+        _AssemblyTypeName: 
+      _CompareType: 3
+      _ParameterIndex: 0
+    _IntParameters:
+    - _Type: 0
       _Value: 100
       _Parameter:
-        container: {fileID: 0}
+        _Type: 0
+        _Container: {fileID: 0}
+        _Slot:
+          nodeGraph: {fileID: 0}
+          branchID: 0
         id: 0
+        name: 
       _MinRange: 0
       _MaxRange: 0
       _Slot:
         nodeGraph: {fileID: 0}
         branchID: 0
-    _LongValue:
-      _Type: 0
-      _Value: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _MinRange: 0
-      _MaxRange: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _FloatValue:
-      _Type: 0
-      _Value: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _MinRange: 0
-      _MaxRange: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _BoolValue:
-      _Type: 0
-      _Value: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Probability: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _StringValue:
-      _Type: 0
-      _Value: 
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _GameObjectValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _Vector2Value:
-      _Type: 0
-      _Value: {x: 0, y: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _Vector3Value:
-      _Type: 0
-      _Value: {x: 0, y: 0, z: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _QuaternionValue:
-      _Type: 0
-      _Value: {x: 0, y: 0, z: 0, w: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _RectValue:
-      _Type: 0
-      _Value:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _BoundsValue:
-      _Type: 0
-      _Value:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _ColorValue:
-      _Type: 0
-      _Value: {r: 0, g: 0, b: 0, a: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _TransformValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _RectTransformValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _RigidbodyValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _Rigidbody2DValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _ComponentValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _SerializeVersion: 1
-    _OldType: 0
-    _OldIntValue: 0
-    _OldFloatValue: 0
-    _OldBoolValue: 0
+    _LongParameters: []
+    _FloatParameters: []
+    _BoolParameters: []
+    _EnumParameters: []
+    _StringParameters: []
+    _Vector2Parameters: []
+    _Vector3Parameters: []
+    _QuaternionParameters: []
+    _RectParameters: []
+    _BoundsParameters: []
+    _ColorParameters: []
+    _GameObjectParameters: []
+    _ComponentParameters: []
   _NextState:
     name: 
     stateID: 557563932
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
+  _OldConditions: []
 --- !u!114 &114047589
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -1166,8 +1244,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1285930301
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1516180604
@@ -1187,18 +1267,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1285930301
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   reference:
-    container: {fileID: 375337570}
+    _Type: 0
+    _Container: {fileID: 375337570}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 1976681210
+    name: 
+  _ParameterType: 0
+  _ReferenceType:
+    _AssemblyTypeName: 
   function: 1
   _IntValue:
     _Type: 0
     _Value: 1
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1208,8 +1302,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1219,8 +1318,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1230,8 +1334,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -1240,17 +1349,42 @@ MonoBehaviour:
     _Type: 0
     _Value: 
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _EnumValue:
+    _Type: 0
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _GameObjectValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1258,8 +1392,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1267,8 +1406,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1276,8 +1420,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0, w: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1290,8 +1439,13 @@ MonoBehaviour:
       width: 0
       height: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1301,8 +1455,13 @@ MonoBehaviour:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1310,56 +1469,93 @@ MonoBehaviour:
     _Type: 0
     _Value: {r: 1, g: 1, b: 1, a: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _TransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RectTransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RigidbodyValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _Rigidbody2DValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ComponentValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _SerializeVersion: 1
   _OldIntValue: 0
   _OldFloatValue: 0
@@ -1377,8 +1573,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 28060293
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1516180604
@@ -1398,18 +1596,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 132679328
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   reference:
-    container: {fileID: 375337570}
+    _Type: 0
+    _Container: {fileID: 375337570}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 1976681210
+    name: 
+  _ParameterType: 0
+  _ReferenceType:
+    _AssemblyTypeName: 
   function: 0
   _IntValue:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1419,8 +1631,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1430,8 +1647,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1441,8 +1663,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -1451,17 +1678,42 @@ MonoBehaviour:
     _Type: 0
     _Value: 
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _EnumValue:
+    _Type: 0
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _GameObjectValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1469,8 +1721,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1478,8 +1735,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1487,8 +1749,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0, w: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1501,8 +1768,13 @@ MonoBehaviour:
       width: 0
       height: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1512,8 +1784,13 @@ MonoBehaviour:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1521,56 +1798,93 @@ MonoBehaviour:
     _Type: 0
     _Value: {r: 1, g: 1, b: 1, a: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _TransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RectTransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RigidbodyValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _Rigidbody2DValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ComponentValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _SerializeVersion: 1
   _OldIntValue: 0
   _OldFloatValue: 0
@@ -1588,23 +1902,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 2014296670
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 235299308}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _Parameter:
-    container: {fileID: 375337570}
+    _Type: 0
+    _Container: {fileID: 375337570}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 1976681210
+    name: 
   _Format: 
   _ChangeTimingUpdate: 1
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
 --- !u!114 &114047594
 MonoBehaviour:
@@ -1619,8 +1947,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 364929089
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 595179392
@@ -1640,18 +1970,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 364929089
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   reference:
-    container: {fileID: 375337570}
+    _Type: 0
+    _Container: {fileID: 375337570}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 1976681210
+    name: 
+  _ParameterType: 0
+  _ReferenceType:
+    _AssemblyTypeName: 
   function: 1
   _IntValue:
     _Type: 0
     _Value: 1
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1661,8 +2005,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1672,8 +2021,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -1683,8 +2037,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -1693,17 +2052,42 @@ MonoBehaviour:
     _Type: 0
     _Value: 
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _EnumValue:
+    _Type: 0
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _GameObjectValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1711,8 +2095,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1720,8 +2109,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1729,8 +2123,13 @@ MonoBehaviour:
     _Type: 0
     _Value: {x: 0, y: 0, z: 0, w: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1743,8 +2142,13 @@ MonoBehaviour:
       width: 0
       height: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1754,8 +2158,13 @@ MonoBehaviour:
       m_Center: {x: 0, y: 0, z: 0}
       m_Extent: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1763,56 +2172,93 @@ MonoBehaviour:
     _Type: 0
     _Value: {r: 1, g: 1, b: 1, a: 1}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _TransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RectTransformValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _RigidbodyValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _Rigidbody2DValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ComponentValue:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _SerializeVersion: 1
   _OldIntValue: 0
   _OldFloatValue: 0
@@ -1830,8 +2276,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1553796064
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 595179392
@@ -1851,28 +2299,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1553796064
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 486298488}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _String:
     _Type: 0
     _Value: '"Move Left" Hold'
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ChangeTimingUpdate: 0
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
 --- !u!114 &114047598
@@ -1888,14 +2350,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1516180604
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1903,8 +2371,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Fire
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -1928,192 +2401,61 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 595179392
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
-  _Conditions:
-  - _Reference:
-      container: {fileID: 375337570}
-      id: 1976681210
-    _CompareType: 3
-    _IntValue:
-      _Type: 0
+  _ConditionList:
+    _Conditions:
+    - _Reference:
+        _Type: 0
+        _Container: {fileID: 375337570}
+        _Slot:
+          nodeGraph: {fileID: 0}
+          branchID: 0
+        id: 1976681210
+        name: 
+      _ParameterType: 0
+      _ReferenceType:
+        _AssemblyTypeName: 
+      _CompareType: 3
+      _ParameterIndex: 0
+    _IntParameters:
+    - _Type: 0
       _Value: 100
       _Parameter:
-        container: {fileID: 0}
+        _Type: 0
+        _Container: {fileID: 0}
+        _Slot:
+          nodeGraph: {fileID: 0}
+          branchID: 0
         id: 0
+        name: 
       _MinRange: 0
       _MaxRange: 0
       _Slot:
         nodeGraph: {fileID: 0}
         branchID: 0
-    _LongValue:
-      _Type: 0
-      _Value: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _MinRange: 0
-      _MaxRange: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _FloatValue:
-      _Type: 0
-      _Value: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _MinRange: 0
-      _MaxRange: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _BoolValue:
-      _Type: 0
-      _Value: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Probability: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _StringValue:
-      _Type: 0
-      _Value: 
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _GameObjectValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _Vector2Value:
-      _Type: 0
-      _Value: {x: 0, y: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _Vector3Value:
-      _Type: 0
-      _Value: {x: 0, y: 0, z: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _QuaternionValue:
-      _Type: 0
-      _Value: {x: 0, y: 0, z: 0, w: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _RectValue:
-      _Type: 0
-      _Value:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _BoundsValue:
-      _Type: 0
-      _Value:
-        m_Center: {x: 0, y: 0, z: 0}
-        m_Extent: {x: 0, y: 0, z: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _ColorValue:
-      _Type: 0
-      _Value: {r: 0, g: 0, b: 0, a: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _TransformValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _RectTransformValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _RigidbodyValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _Rigidbody2DValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _ComponentValue:
-      _Type: 0
-      _Value: {fileID: 0}
-      _Parameter:
-        container: {fileID: 0}
-        id: 0
-      _Slot:
-        nodeGraph: {fileID: 0}
-        branchID: 0
-    _SerializeVersion: 1
-    _OldType: 0
-    _OldIntValue: 0
-    _OldFloatValue: 0
-    _OldBoolValue: 0
+    _LongParameters: []
+    _FloatParameters: []
+    _BoolParameters: []
+    _EnumParameters: []
+    _StringParameters: []
+    _Vector2Parameters: []
+    _Vector3Parameters: []
+    _QuaternionParameters: []
+    _RectParameters: []
+    _BoundsParameters: []
+    _ColorParameters: []
+    _GameObjectParameters: []
+    _ComponentParameters: []
   _NextState:
     name: 
     stateID: 1784046367
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
+  _OldConditions: []
 --- !u!114 &114047600
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -2127,14 +2469,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 595179392
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2142,8 +2490,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Move Horizontal
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2167,28 +2520,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1784046367
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 486298488}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _String:
     _Type: 0
     _Value: '"Move Left" Up'
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ChangeTimingUpdate: 0
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
 --- !u!114 &114047602
@@ -2204,14 +2571,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1516180604
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2219,8 +2592,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Fire
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2244,28 +2622,42 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1652448765
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Text:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 486298488}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _String:
     _Type: 0
     _Value: '"Move Left" Down'
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
   _ChangeTimingUpdate: 0
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
 --- !u!114 &114047604
@@ -2281,8 +2673,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1976681210
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 132679328
@@ -2302,14 +2696,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 1652448765
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2317,8 +2717,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Move Horizontal
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2342,14 +2747,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 114047579}
   _NodeID: 132679328
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2357,8 +2768,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Fire
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2649,33 +3065,46 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff7f9820050bbf468fba4b58fe18f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Owner: {fileID: 0}
   _Parameters:
   - container: {fileID: 375337570}
     id: 1976681210
     type: 0
     name: Counter
-    _IntValue: 0
-    _LongValue: 0
-    _FloatValue: 0
-    _BoolValue: 0
-    _StringValue: 
-    _GameObjectValue: {fileID: 0}
-    _Vector2Value: {x: 0, y: 0}
-    _Vector3Value: {x: 0, y: 0, z: 0}
-    _QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    _RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    _BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    _ColorValue: {r: 1, g: 1, b: 1, a: 1}
-    _ObjectReferenceValue: {fileID: 0}
-    componentType:
-      _AssemblyTypeName: UnityEngine.Component, UnityEngine.CoreModule
+    _ParameterIndex: 0
+    _IsPublicSet: 1
+    _IsPublicGet: 1
+    referenceType:
+      _AssemblyTypeName: 
+  _SerializeVersion: 1
+  _OldParameters: []
+  _AssetObjectListParameters: []
+  _BoolParameters: 
+  _BoolListParameters: []
+  _BoundsParameters: []
+  _BoundsListParameters: []
+  _ColorParameters: []
+  _ColorListParameters: []
+  _ComponentListParameters: []
+  _EnumListParameters: []
+  _FloatParameters: []
+  _FloatListParameters: []
+  _GameObjectListParameters: []
+  _IntParameters: 00000000
+  _IntListParameters: []
+  _LongParameters: 
+  _LongListParameters: []
+  _ObjectParameters: []
+  _QuaternionParameters: []
+  _QuaternionListParameters: []
+  _RectParameters: []
+  _RectListParameters: []
+  _StringParameters: []
+  _StringListParameters: []
+  _Vector2Parameters: []
+  _Vector2ListParameters: []
+  _Vector3Parameters: []
+  _Vector3ListParameters: []
 --- !u!4 &375337571
 Transform:
   m_ObjectHideFlags: 0

@@ -429,8 +429,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 1380812986}
   _NodeID: 787814235
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1285930301
@@ -450,12 +452,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 1380812986}
   _NodeID: 1746430907
+  _DataSlotFieldLinks: []
   _Value1:
     _Type: 0
     _Value: {x: 1, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -463,8 +471,13 @@ MonoBehaviour:
     _Type: 3
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
@@ -486,25 +499,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 1380812986}
   _NodeID: 787814235
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Transform:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 1380812990}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+  _SerializeVersion: 1
   _Space: 0
   _UpdateMethodType: 1
   _Velocity:
     _Type: 2
     _Value: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 1380812986}
       branchID: 28060293
@@ -521,24 +547,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 1380812986}
   _NodeID: 1976681210
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
-  m_IsSystemPlayer:
-    _Type: 0
-    _Value: 0
-    _Parameter:
-      container: {fileID: 0}
-      id: 0
-    _Probability: 0
-    _Slot:
-      nodeGraph: {fileID: 0}
-      branchID: 0
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -546,8 +568,13 @@ MonoBehaviour:
     _Type: 0
     _Value: Move Horizontal
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -572,7 +599,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphName: New StateMachine
+  debugInfiniteLoopSettings:
+    maxLoopCount: 10000
+    enableLogging: 1
+    enableBreak: 0
   _OwnerBehaviour: {fileID: 0}
+  _ParameterContainer: {fileID: 0}
   _Calculators:
   - _NodeGraph: {fileID: 1380812986}
     _NodeID: 1746430907
@@ -608,10 +640,10 @@ MonoBehaviour:
     outBehaviour: {fileID: 1380812985}
     outNodeID: 1976681210
     lineBezier:
-      _StartPosition: {x: 312, y: 15}
-      _StartControl: {x: 362, y: 15}
-      _EndPosition: {x: 384, y: 159}
-      _EndControl: {x: 334, y: 159}
+      _StartPosition: {x: 324, y: -3}
+      _StartControl: {x: 374, y: -3}
+      _EndPosition: {x: 352, y: 159}
+      _EndControl: {x: 302, y: 159}
     showDataValue: 0
   - branchID: 28060293
     enabled: 1
@@ -620,10 +652,10 @@ MonoBehaviour:
     outBehaviour: {fileID: 1380812991}
     outNodeID: 327313629
     lineBezier:
-      _StartPosition: {x: 1020, y: 173}
-      _StartControl: {x: 1070, y: 173}
-      _EndPosition: {x: 1162, y: 147}
-      _EndControl: {x: 1112, y: 147}
+      _StartPosition: {x: 1032, y: 173}
+      _StartControl: {x: 1082, y: 173}
+      _EndPosition: {x: 1120, y: 147}
+      _EndControl: {x: 1070, y: 147}
     showDataValue: 0
   - branchID: 1746430907
     enabled: 1
@@ -632,10 +664,10 @@ MonoBehaviour:
     outBehaviour: {fileID: 1380812983}
     outNodeID: 1746430907
     lineBezier:
-      _StartPosition: {x: 660, y: 177}
-      _StartControl: {x: 710, y: 177}
-      _EndPosition: {x: 744, y: 137}
-      _EndControl: {x: 694, y: 137}
+      _StartPosition: {x: 672, y: 177}
+      _StartControl: {x: 722, y: 177}
+      _EndPosition: {x: 712, y: 137}
+      _EndControl: {x: 662, y: 137}
     showDataValue: 0
   playOnStart: 1
   updateSettings:
@@ -651,7 +683,7 @@ MonoBehaviour:
       x: 24
       y: -108
       width: 300
-      height: 153
+      height: 136
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -666,7 +698,7 @@ MonoBehaviour:
       x: 1140
       y: 24
       width: 300
-      height: 170
+      height: 193
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -773,12 +805,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 1380812986}
   _NodeID: 327313629
+  _DataSlotFieldLinks: []
   _Value1:
     _Type: 2
     _Value: {x: 0, y: 0, z: 0}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 1380812986}
       branchID: 1746430907
@@ -786,8 +824,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 10
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _MinRange: 0
     _MaxRange: 0
     _Slot:
