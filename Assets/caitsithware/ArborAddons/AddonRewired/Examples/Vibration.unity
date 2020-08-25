@@ -1155,6 +1155,11 @@ GameObject:
   - component: {fileID: 705932187}
   - component: {fileID: 705932189}
   - component: {fileID: 705932190}
+  - component: {fileID: 705932193}
+  - component: {fileID: 705932192}
+  - component: {fileID: 705932191}
+  - component: {fileID: 705932195}
+  - component: {fileID: 705932194}
   m_Layer: 0
   m_Name: ArborFSM
   m_TagString: Untagged
@@ -1357,15 +1362,20 @@ MonoBehaviour:
       x: -840
       y: -144
       width: 300
-      height: 966
+      height: 1521
     showComment: 0
     nodeComment: 
     _Resident: 1
     _Behaviours:
+    - {fileID: 705932195}
     - {fileID: 705932176}
+    - {fileID: 705932194}
     - {fileID: 705932175}
+    - {fileID: 705932193}
     - {fileID: 705932174}
+    - {fileID: 705932192}
     - {fileID: 705932185}
+    - {fileID: 705932191}
     - {fileID: 705932184}
     - {fileID: 705932187}
     - {fileID: 705932188}
@@ -2015,6 +2025,269 @@ MonoBehaviour:
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+--- !u!114 &705932191
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705932170}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36befb7319654469b06575bb4920d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 705932172}
+  _NodeID: 1516180604
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Slider:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 1711931915}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 769728170}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 1516180604
+      name: VibrationStateDuration
+    _MinRange: 0
+    _MaxRange: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldSlider: {fileID: 0}
+  _OldValue: 0
+--- !u!114 &705932192
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705932170}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36befb7319654469b06575bb4920d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 705932172}
+  _NodeID: 1516180604
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Slider:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 495658276}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 769728170}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 1976681210
+      name: Duration
+    _MinRange: 0
+    _MaxRange: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldSlider: {fileID: 0}
+  _OldValue: 0
+--- !u!114 &705932193
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705932170}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36befb7319654469b06575bb4920d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 705932172}
+  _NodeID: 1516180604
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Slider:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 1375682646}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 769728170}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 557563932
+      name: MotorLevel
+    _MinRange: 0
+    _MaxRange: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldSlider: {fileID: 0}
+  _OldValue: 0
+--- !u!114 &705932194
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705932170}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c0af5b38575c047830e08eb6fe992e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 705932172}
+  _NodeID: 1516180604
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Toggle:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 125641585}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 769728170}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 1746430907
+      name: StopOnEnd
+    _Probability: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldToggle: {fileID: 0}
+  _OldValue: 0
+--- !u!114 &705932195
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 705932170}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 98c0af5b38575c047830e08eb6fe992e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 705932172}
+  _NodeID: 1516180604
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Toggle:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 1145314445}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 769728170}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 787814235
+      name: IsSetDuration
+    _Probability: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldToggle: {fileID: 0}
+  _OldValue: 0
 --- !u!1 &709633270
 GameObject:
   m_ObjectHideFlags: 0

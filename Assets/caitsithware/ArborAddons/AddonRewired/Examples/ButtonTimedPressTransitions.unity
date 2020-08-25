@@ -224,6 +224,8 @@ GameObject:
   - component: {fileID: 114047582}
   - component: {fileID: 114047578}
   - component: {fileID: 114047613}
+  - component: {fileID: 114047615}
+  - component: {fileID: 114047614}
   m_Layer: 0
   m_Name: ArborFSM
   m_TagString: Untagged
@@ -485,17 +487,19 @@ MonoBehaviour:
     _NodeID: 2014296670
     position:
       serializedVersion: 2
-      x: -756
-      y: 300
+      x: -1020
+      y: 264
       width: 300
-      height: 744
+      height: 966
     showComment: 0
     nodeComment: 
     _Resident: 1
     _Behaviours:
     - {fileID: 114047593}
+    - {fileID: 114047615}
     - {fileID: 114047610}
     - {fileID: 114047609}
+    - {fileID: 114047614}
     - {fileID: 114047608}
     - {fileID: 114047607}
     - {fileID: 114047611}
@@ -3430,6 +3434,112 @@ MonoBehaviour:
   _SerializeVersion: 2
   _OldText: {fileID: 0}
   _OldString: 
+--- !u!114 &114047614
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114047577}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36befb7319654469b06575bb4920d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 114047579}
+  _NodeID: 2014296670
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Slider:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 816881402}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 375337570}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 1746430907
+      name: ExpireIn
+    _MinRange: 0
+    _MaxRange: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldSlider: {fileID: 0}
+  _OldValue: 0
+--- !u!114 &114047615
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 114047577}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb36befb7319654469b06575bb4920d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _NodeGraph: {fileID: 114047579}
+  _NodeID: 2014296670
+  _DataSlotFieldLinks: []
+  expanded: 1
+  _BehaviourEnabled: 1
+  _Slider:
+    _Type: 0
+    _HierarchyType: 0
+    _Value: {fileID: 843305990}
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 0
+      name: 
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
+  _Value:
+    _Type: 1
+    _Value: 0
+    _Parameter:
+      _Type: 0
+      _Container: {fileID: 375337570}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
+      id: 787814235
+      name: Time
+    _MinRange: 0
+    _MaxRange: 0
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
+  _ChangeTimingUpdate: 0
+  _SerializeVersion: 2
+  _OldSlider: {fileID: 0}
+  _OldValue: 0
 --- !u!1 &229209903
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,8 +3945,8 @@ MonoBehaviour:
   _ComponentListParameters: []
   _EnumListParameters: []
   _FloatParameters:
-  - 5
   - 0
+  - 5
   _FloatListParameters: []
   _GameObjectListParameters: []
   _IntParameters: 00000000
@@ -4128,7 +4238,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 10
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
