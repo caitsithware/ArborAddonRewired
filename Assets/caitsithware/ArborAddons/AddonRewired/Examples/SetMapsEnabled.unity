@@ -456,8 +456,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parameter:
-    container: {fileID: 1188740243}
+    _Type: 0
+    _Container: {fileID: 1188740243}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 1976681210
+    name: 
 --- !u!114 &428864531
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1028,8 +1033,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Parameter:
-    container: {fileID: 1188740243}
+    _Type: 0
+    _Container: {fileID: 1188740243}
+    _Slot:
+      nodeGraph: {fileID: 0}
+      branchID: 0
     id: 787814235
+    name: 
 --- !u!114 &1160856070
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1153,59 +1163,57 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bff7f9820050bbf468fba4b58fe18f2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _Owner: {fileID: 0}
   _Parameters:
   - container: {fileID: 1188740243}
     id: 1976681210
     type: 4
     name: Category
-    _IntValue: 0
-    _LongValue: 0
-    _FloatValue: 0
-    _BoolValue: 0
-    _StringValue: Default
-    _GameObjectValue: {fileID: 0}
-    _Vector2Value: {x: 0, y: 0}
-    _Vector3Value: {x: 0, y: 0, z: 0}
-    _QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    _RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    _BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    _ColorValue: {r: 1, g: 1, b: 1, a: 1}
-    _ObjectReferenceValue: {fileID: 0}
-    componentType:
-      _AssemblyTypeName: UnityEngine.Component, UnityEngine.CoreModule
+    _ParameterIndex: 0
+    _IsPublicSet: 1
+    _IsPublicGet: 1
+    referenceType:
+      _AssemblyTypeName: 
   - container: {fileID: 1188740243}
     id: 787814235
     type: 4
     name: Layout
-    _IntValue: 0
-    _LongValue: 0
-    _FloatValue: 0
-    _BoolValue: 0
-    _StringValue: 
-    _GameObjectValue: {fileID: 0}
-    _Vector2Value: {x: 0, y: 0}
-    _Vector3Value: {x: 0, y: 0, z: 0}
-    _QuaternionValue: {x: 0, y: 0, z: 0, w: 0}
-    _RectValue:
-      serializedVersion: 2
-      x: 0
-      y: 0
-      width: 0
-      height: 0
-    _BoundsValue:
-      m_Center: {x: 0, y: 0, z: 0}
-      m_Extent: {x: 0, y: 0, z: 0}
-    _ColorValue: {r: 1, g: 1, b: 1, a: 1}
-    _ObjectReferenceValue: {fileID: 0}
-    componentType:
-      _AssemblyTypeName: UnityEngine.Component, UnityEngine.CoreModule
+    _ParameterIndex: 1
+    _IsPublicSet: 1
+    _IsPublicGet: 1
+    referenceType:
+      _AssemblyTypeName: 
+  _SerializeVersion: 1
+  _OldParameters: []
+  _AssetObjectListParameters: []
+  _BoolParameters: 
+  _BoolListParameters: []
+  _BoundsParameters: []
+  _BoundsListParameters: []
+  _ColorParameters: []
+  _ColorListParameters: []
+  _ComponentListParameters: []
+  _EnumListParameters: []
+  _FloatParameters: []
+  _FloatListParameters: []
+  _GameObjectListParameters: []
+  _IntParameters: 
+  _IntListParameters: []
+  _LongParameters: 
+  _LongListParameters: []
+  _ObjectParameters: []
+  _QuaternionParameters: []
+  _QuaternionListParameters: []
+  _RectParameters: []
+  _RectListParameters: []
+  _StringParameters:
+  - Default
+  - 
+  _StringListParameters: []
+  _Vector2Parameters: []
+  _Vector2ListParameters: []
+  _Vector3Parameters: []
+  _Vector3ListParameters: []
 --- !u!4 &1188740244
 Transform:
   m_ObjectHideFlags: 0
@@ -2216,14 +2224,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 1976681210
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2231,8 +2245,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 1
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -2250,7 +2269,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphName: New StateMachine
+  debugInfiniteLoopSettings:
+    maxLoopCount: 10000
+    enableLogging: 1
+    enableBreak: 0
   _OwnerBehaviour: {fileID: 0}
+  _ParameterContainer: {fileID: 0}
   _Calculators: []
   _Comments: []
   _Groups: []
@@ -2271,7 +2295,7 @@ MonoBehaviour:
       x: -168
       y: -120
       width: 300
-      height: 152
+      height: 175
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -2287,7 +2311,7 @@ MonoBehaviour:
       x: -168
       y: 84
       width: 300
-      height: 152
+      height: 175
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -2303,7 +2327,7 @@ MonoBehaviour:
       x: -168
       y: 288
       width: 300
-      height: 252
+      height: 283
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -2319,7 +2343,7 @@ MonoBehaviour:
       x: -168
       y: 564
       width: 300
-      height: 252
+      height: 283
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -2335,7 +2359,7 @@ MonoBehaviour:
       x: 324
       y: 312
       width: 300
-      height: 61
+      height: 63
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -2350,7 +2374,7 @@ MonoBehaviour:
       x: -588
       y: 108
       width: 300
-      height: 252
+      height: 256
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -2389,24 +2413,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 327313629
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Button:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 1726368057}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _NextState:
     name: 
     stateID: 557563932
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldButton: {fileID: 0}
 --- !u!114 &2142318430
 MonoBehaviour:
@@ -2421,14 +2454,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 787814235
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2436,8 +2475,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -2456,24 +2500,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 327313629
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Button:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 1978989445}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _NextState:
     name: 
     stateID: 1746430907
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldButton: {fileID: 0}
 --- !u!114 &2142318432
 MonoBehaviour:
@@ -2488,6 +2541,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 1516180604
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _TransitionTiming: 0
@@ -2504,14 +2558,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 557563932
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2519,8 +2579,13 @@ MonoBehaviour:
     _Type: 1
     _Value: Default
     _Parameter:
-      container: {fileID: 1188740243}
+      _Type: 0
+      _Container: {fileID: 1188740243}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 1976681210
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2528,8 +2593,13 @@ MonoBehaviour:
     _Type: 1
     _Value: Default
     _Parameter:
-      container: {fileID: 1188740243}
+      _Type: 0
+      _Container: {fileID: 1188740243}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 787814235
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2537,8 +2607,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -2557,14 +2632,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 1746430907
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: Player0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2572,8 +2653,13 @@ MonoBehaviour:
     _Type: 1
     _Value: Default
     _Parameter:
-      container: {fileID: 1188740243}
+      _Type: 0
+      _Container: {fileID: 1188740243}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 1976681210
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2581,8 +2667,13 @@ MonoBehaviour:
     _Type: 1
     _Value: 
     _Parameter:
-      container: {fileID: 1188740243}
+      _Type: 0
+      _Container: {fileID: 1188740243}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 787814235
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -2590,8 +2681,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 1
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -2610,24 +2706,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 327313629
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Button:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 515207170}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _NextState:
     name: 
     stateID: 787814235
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldButton: {fileID: 0}
 --- !u!114 &2142318436
 MonoBehaviour:
@@ -2642,24 +2747,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 327313629
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Button:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 48795058}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _NextState:
     name: 
     stateID: 1976681210
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldButton: {fileID: 0}
 --- !u!114 &2142318437
 MonoBehaviour:
@@ -2674,8 +2788,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 557563932
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1516180604
@@ -2695,8 +2811,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 1746430907
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1516180604
@@ -2716,8 +2834,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 787814235
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1516180604
@@ -2737,8 +2857,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2142318427}
   _NodeID: 1976681210
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1516180604

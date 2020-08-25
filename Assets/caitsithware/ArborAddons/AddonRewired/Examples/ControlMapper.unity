@@ -4769,14 +4769,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 1976681210
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: System
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -4784,8 +4790,13 @@ MonoBehaviour:
     _Type: 0
     _Value: ToggleMenu
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -4808,7 +4819,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   graphName: New StateMachine
+  debugInfiniteLoopSettings:
+    maxLoopCount: 10000
+    enableLogging: 1
+    enableBreak: 0
   _OwnerBehaviour: {fileID: 0}
+  _ParameterContainer: {fileID: 0}
   _Calculators: []
   _Comments: []
   _Groups: []
@@ -4829,7 +4845,7 @@ MonoBehaviour:
       x: -120
       y: -120
       width: 300
-      height: 192
+      height: 194
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -4845,7 +4861,7 @@ MonoBehaviour:
       x: 264
       y: -120
       width: 300
-      height: 246
+      height: 248
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -4861,7 +4877,7 @@ MonoBehaviour:
       x: 1080
       y: -12
       width: 300
-      height: 61
+      height: 63
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -4876,7 +4892,7 @@ MonoBehaviour:
       x: 660
       y: 48
       width: 300
-      height: 134
+      height: 157
     showComment: 0
     nodeComment: 
     _Resident: 0
@@ -4913,6 +4929,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 1746430907
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _TransitionTiming: 0
@@ -4929,23 +4946,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 787814235
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_ControlMapper:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 799210682}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   m_CloseOnEnd:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -4954,8 +4985,13 @@ MonoBehaviour:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -4979,23 +5015,37 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 557563932
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_ControlMapper:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 799210682}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   m_SaveOnClose:
     _Type: 0
     _Value: 0
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Probability: 0
     _Slot:
       nodeGraph: {fileID: 0}
@@ -5013,8 +5063,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 557563932
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
+  _TransitionMethod: 0
   _NextState:
     name: 
     stateID: 1746430907
@@ -5034,14 +5086,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 787814235
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   m_PlayerName:
     _Type: 0
     _Value: System
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -5049,8 +5107,13 @@ MonoBehaviour:
     _Type: 0
     _Value: ToggleMenu
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
@@ -5074,24 +5137,33 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _NodeGraph: {fileID: 2020053122}
   _NodeID: 1976681210
+  _DataSlotFieldLinks: []
   expanded: 1
   _BehaviourEnabled: 1
   _Button:
     _Type: 0
+    _HierarchyType: 0
     _Value: {fileID: 1585923766}
     _Parameter:
-      container: {fileID: 0}
+      _Type: 0
+      _Container: {fileID: 0}
+      _Slot:
+        nodeGraph: {fileID: 0}
+        branchID: 0
       id: 0
+      name: 
     _Slot:
       nodeGraph: {fileID: 0}
       branchID: 0
+    _OverrideConstraintType:
+      _AssemblyTypeName: 
   _NextState:
     name: 
     stateID: 787814235
     transitionTiming: 2
     lineColorChanged: 0
     lineColor: {r: 1, g: 1, b: 1, a: 1}
-  _SerializeVersion: 1
+  _SerializeVersion: 2
   _OldButton: {fileID: 0}
 --- !u!1 &2067753413
 GameObject:
