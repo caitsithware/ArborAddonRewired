@@ -52,11 +52,11 @@ Assets/caitsithware/ArborAddons/AddonRewired/Examples/
 
 ## Arbor 3
 
-https://www.assetstore.unity3d.com/#!/content/112239?aid=1101lGsc
+https://assetstore.unity.com/packages/tools/visual-scripting/arbor-3-fsm-bt-graph-editor-112239?aid=1101lGsc
 
 ## Rewired
 
-https://www.assetstore.unity3d.com/#!/content/21676?aid=1101lGsc
+https://assetstore.unity.com/packages/tools/utilities/rewired-21676?aid=1101lGsc
 
 # License
 
